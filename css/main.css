@@ -1,5 +1,7 @@
 :root {
   --font-sans-serif: acumin-pro-wide, sans-serif;
+  --font-sans-heading: acumin-pro, sans-serif;
+  --font-serif: adonis-web, serif;
   --purple: #a40d9e;
   --black: #000;
   --white: #f7f7f7;
@@ -10,6 +12,31 @@ html {
     font-size: 15px;
     background: var(--white);
   }
+  img {
+    display: block;
+  }
+  /*Library Formatting*/
+  .component {
+    margin: 1rem;
+  }
+  .component__name {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .component img {
+    max-width: initial;
+  }
+  .component__img {
+    overflow-x: auto;
+    border: 1px solid grey;
+  }
+  .component__code {
+    border: 1px solid black;
+  }
+  /*Main Formatting*/
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -17,17 +44,45 @@ body {
     font-family: var(--font-sans-serif);
     color: var(--black);
 }
-.copy--large {
+.copy--big {
   font-size: 1.25em;
 }
 .copy {
   font-size: normal;
 }
-h1 {
-    font-weight: 500;
-    font-size: 5em;
-    text-transform: uppercase;
+h1,h2,h3,h4,h5,h6 {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: var(--font-sans-heading);
+  margin: 0;
+}.heading--serif {
+  font-family: var(--font-serif);
 }
-.page-heading--purple {
+.heading--bolder {
+  font-weight: 500;
+}
+.heading--upper {
+  text-transform: uppercase;
+}
+.heading--big {
+  font-size: 6.39vw;
+  font-stretch: semi-condensed;
+}
+.heading--bigger {
+  font-size: 24rem;
+}
+.heading--no-big {
+  font-size: 1.07vw;
+}
+.section-heading:before {
+  content: url(../img/bullet.png);
+  margin: .75rem;
+  position: relative;
+  bottom: -.25rem;
+}
+.heading--purple {
     color: var(--purple);
+}
+.sub--big {
+  font-size: 2.78vw;
 }
