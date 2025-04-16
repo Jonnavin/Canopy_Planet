@@ -1,21 +1,33 @@
+:root {
+  --font-sans-serif: acumin-pro-wide, sans-serif;
+  --purple: #a40d9e;
+  --black: #000;
+  --white: #f7f7f7;
+  --grey: #636363;
+}
 html {
     box-sizing: border-box;
+    font-size: 15px;
+    background: var(--white);
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
 body {
-    font-family: acumin-pro-wide, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    font-size: 20px;
+    font-family: var(--font-sans-serif);
+    color: var(--black);
+}
+.copy--large {
+  font-size: 1.25em;
+}
+.copy {
+  font-size: normal;
 }
 h1 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 5em;
     text-transform: uppercase;
 }
 .page-heading--purple {
-    color: #a40d9e;
+    color: var(--purple);
 }
