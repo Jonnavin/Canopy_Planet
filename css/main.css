@@ -121,6 +121,9 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--white);
   border: 1px solid transparent;
 }
+.button--white:hover img {
+  filter: invert(1);
+}
 .icon {
   display: inline;
 }
@@ -155,4 +158,19 @@ h1,h2,h3,h4,h5,h6 {
 .button--cookie-alt:hover {
   background: var(--grey);
   color: var(--white);
+}
+.button--small {
+  font-size: 13px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 5px;
+}
+.button--small:hover {
+  background: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+.small__link {
+  padding: 0.5rem 1rem;
+  margin: 0;
 }
