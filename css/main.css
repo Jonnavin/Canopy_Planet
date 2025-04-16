@@ -92,6 +92,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .sub--big {
   font-size: 2.78vw;
+  line-height: 1.1em;
 }
 /*BUTTONS*/
 .button {
@@ -173,4 +174,22 @@ h1,h2,h3,h4,h5,h6 {
 .small__link {
   padding: 0.5rem 1rem;
   margin: 0;
+}
+/*POPUP*/
+.popup {
+  width: 28.5vw;
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 20px;
+}
+.popup__topper {
+  display: flex;
+  gap: 1rem;
+}
+.button--x {
+  background-color: var(--white);
+  border: 0;
+  max-height: fit-content;
+  max-width: fit-content;
+  cursor: pointer;
 }
