@@ -87,6 +87,43 @@
         </div>
     </article>
 
+    <article class="component">
+        <h3 class="component__name">Cookie toggle</h3>
+        <div class="component__img">
+            <img srcset="img/cookie-toggle.png 1.25x" src="img/cookie-toggle.png" alt="cookie toggle button">
+        </div>
+        <div class="component__code">
+            <div class="cookie__toggle"><a href="#cookie"><img src="../img/cookie.svg"></a></div>
+        </div>
+    </article>
+    <article class="component">
+        <h3 class="component__name">Cookie header</h3>
+        <div class="component__img">
+            <img srcset="img/cookie-header.png 1.25x" src="img/cookie-header.png" alt="cookie window header">
+        </div>
+        <div class="component__code">
+            <section class="cookies">
+                <div class="topper topper--cookies">
+                    <h3 class="heading--bolder sub heading--wide">Customize Consent Preferences</h3>
+                    <div><a href="#"><img src="../img/x.png" srcset="../img/x.png 1.25x" alt="exit"></a></div>
+                </div>
+            </section>
+        </div>
+    </article>
+    <article class="component">
+        <h3 class="component__name">Cookie Switch</h3>
+        <div class="component__img">
+            <img srcset="img/cookies__accordion__optional-switch.png 1.25x" src="img/cookies__accordion__optional-switch.png" alt="cookie switch">
+            <img srcset="img/cookies__accordion__header.png 1.25x" src="img/cookies__accordion__header.png" alt="cookie topper">
+        </div>
+        <div class="component__code">
+            <section class="cookies">
+                <label class="switch"><input type="checkbox"><div class="switch-slider"><span class="switch-ball"></span></div></label>
+                <div class="topper"><div class="button__grid"><div class="toggle-arrow"><img src="../img/togglearrow.png" alt="toggle arrow"></div><h4 class="heading--bolder sub">Necessary</h4></div><p class="green heading--bold">Always Active</p></div>
+            </section>
+        </div>
+    </article>
+
     <h2>Molecules</h2>
 
     <article class="component">
@@ -96,7 +133,7 @@
         </div>
         <div class="component__code">
             <div class="popup">
-                <div class="popup__topper">
+                <div class="topper--popup topper">
                     <h3 class="sub--big heading--upper">Become a brand partner</h3>
                     <button class="button--x"><img src="../img/x.png" srcset="../img/x.png 1.25x" alt="exit"></button>
                 </div>
@@ -124,15 +161,50 @@
         </div>
     </article>
 
+    <article class="component">
+        <h3 class="component__name">Cookie Accordion</h3>
+        <div class="component__img">
+            <img srcset="img/cookies__body__accordion.png 1.25x" src="img/cookies__body__accordion.png" alt="cookie accordion closed">
+            <img srcset="img/cookies__acordion--optional.png 1.25x" src="img/cookies__acordion--optional.png" alt="cookie accordion optional">
+            <img srcset="img/cookies__accordion__open.png 1.25x" src="img/cookies__accordion__open.png" alt="cookie accordion open">
+        </div>
+        <div class="component__code">
+            <section class="cookies">
+                <div class="accordion">
+                    <div class="topper">
+                        <div class="button__grid">
+                            <div class="toggle-arrow"><img src="../img/togglearrow.png" alt="toggle arrow"></div>
+                            <h4 class="heading--bolder sub">Necessary</h4>
+                        </div>
+                        <p class="green heading--bolder">Always Active</p>
+                    </div>
+                    <p class="copy--small morepad">Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or 
+                    adjusting your consent preferences. These cookies do not store any personally identifiable data.</p>
+                </div>
+                <div class="accordion">
+                    <div class="topper">
+                        <div class="button__grid">
+                            <div class="toggle-arrow"><img src="../img/togglearrow.png" alt="toggle arrow"></div>
+                            <h4 class="heading--bolder sub">Functional</h4>
+                        </div>
+                        <label class="switch"><input type="checkbox"><div class="switch-slider"><span class="switch-ball"></span></div></label>
+                    </div>
+                    <p class="copy--small morepad">Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or 
+                    adjusting your consent preferences. These cookies do not store any personally identifiable data.</p>
+                </div>
+            </section>
+        </div>
+    </article>
+
     <h2>organisms</h2>
 
     <article class="component">
-        <h3 class="component__name">Toolbar</h3>
+        <h3 class="component__name">Header</h3>
         <div class="component__img">
             <img srcset="img/page-header.png 1.25x" src="img/page-header.png" alt="Page header">
         </div>
         <div class="component__code">
-            <header>
+            <header class="topper">
                 <div>
                     <img src="../img/logo.png" srcset="../img/logo.png 1.25x" alt="canopy logo">
                 </div>
@@ -155,11 +227,11 @@
         <div class="component__code">
             <section class="hero">
                 <div class="sticky">
-                    <h2 class="heading--big heading--upper heading--white hero__heading center">We Protect Forests, Species, And Climate</h2>
+                    <h2 class="heading--big heading--bold heading--upper heading--white hero__heading center">We Protect Forests, Species, And Climate</h2>
                     <div class="button button--white right"><a href="#!"><p class="button__link button__grid"><span>Become A Partner</span><span><img class="icon" src="../img/arrow.png"></span></p></a></div>
                 </div>
                 <div class="popup absolute">
-                    <div class="popup__topper">
+                    <div class="topper--popup topper">
                         <h3 class="sub--big heading--upper">Become a brand partner</h3>
                         <button class="button--x"><img src="../img/x.png" srcset="../img/x.png 1.25x" alt="exit"></button>
                     </div>
