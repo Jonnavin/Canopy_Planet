@@ -1,0 +1,75 @@
+:root {
+    --font-sans-serif: acumin-pro-wide, sans-serif;
+    --font-sans-heading: acumin-pro, sans-serif;
+    --font-serif: adonis-web, serif;
+    --font-thin: acumin-pro-condensed, sans-serif;
+    --purple: #a40d9e;
+    --black: #000;
+    --white: #f7f7f7;
+    --grey: #636363;
+    --near-black: #272727;
+    --green: #028102;
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+    background: var(--white);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.cookie__toggle {
+    background: var(--near-black);
+    border-radius: 25px;
+    max-width: fit-content;
+}
+.cookie__toggle img {
+    box-sizing: content-box;
+    width: 30px;
+    padding: .5rem;
+}
+
+
+.topper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.scroll {
+  overflow-y: auto;
+  position: relative;
+}
+
+
+.cookies {
+    background: var(--white);
+    font-family: var(--font-sans-heading);
+    max-height: 79vh;
+    width: 845px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+#cookie {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: #0008;
+}
+  #cookie:target {
+    visibility: visible;
+}
+.topper--cookies {
+  padding: 1.5rem;
+}
+.topper--cookies img {
+  width: 10px;
+}
