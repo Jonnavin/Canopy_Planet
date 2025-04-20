@@ -485,11 +485,6 @@ input:checked + .switch-slider {
   width: 132px;
   flex-shrink: 0;
 }
-.thumbnail img {
-  max-width: 100%;
-  border-radius: 30px;
-}
-/*REPLACE ^ WITH*/
 .thumbnail-img {
   max-width: 100%;
   border-radius: 30px;
