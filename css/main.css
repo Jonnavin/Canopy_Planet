@@ -118,7 +118,7 @@ h1,h2,h3,h4,h5,h6 {
   font-stretch: semi-condensed;
 }
 .heading--bigger {
-  font-size: 24rem;
+  font-size: 18rem;
 }
 .heading--no-big {
   font-size: 1.07vw;
@@ -489,6 +489,11 @@ input:checked + .switch-slider {
   max-width: 100%;
   border-radius: 30px;
 }
+/*REPLACE ^ WITH*/
+.thumbnail-img {
+  max-width: 100%;
+  border-radius: 30px;
+}
 .news__grid {
   display: flex;
   gap: 1.5rem;
@@ -629,4 +634,20 @@ p,h1,h2,h3,h4,h5 {
   }
   div:has(input:focus) + .search-results {
     visibility: visible;
+  }
+  /*SAD SECTION*/
+  .section-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: auto;
+    width: 94vw;
+  }
+  .section-thumbnail {
+    grid-column: span 6/span 6;
+  }
+  .section-content {
+    grid-column: span 5/span 5;
+    max-width: 100%;
+    gap: 3rem;
   }
