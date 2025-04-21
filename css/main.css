@@ -43,7 +43,7 @@ html {
     max-width: initial;
   }
   .component__img {
-    overflow-x: auto;
+    overflow-x: hidden;
     border: 1px solid grey;
   }
   .component__code {
@@ -135,6 +135,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 .heading--purple {
     color: var(--purple);
+}
+.heading--inits {
+  font-size: 3.61vw;
 }
 .heading--white {
   color: var(--white);
@@ -678,4 +681,40 @@ p,h1,h2,h3,h4,h5 {
   }
   ::-webkit-scrollbar {
     background: transparent;
+  }
+  /*three row grid*/
+  .subsection-1 {
+    grid-column: 1/span 3;
+  }
+  .subsection-1,.subsection-3 {
+    align-self: center;
+  }
+  .subsection-img {
+    height: 600px;
+    width: 100%px;
+    clip-path: polygon(0% -7%, 100% -23%, 100% 107%, 0% 123%);
+    grid-column: 5/span 4;
+  }
+  .initiatives:first-child .subsection-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 107%, 0% 123%);
+  }
+  .initiatives:last-child .subsection-img {
+    clip-path: polygon(0% -7%, 100% -23%, 100% 100%, 0% 100%);
+  }
+  .subsection-3 {
+    grid-column: span 3/-1;
+    gap: 1.5rem;
+  }
+  .skew-frame {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .skew-frame img {
+    height: 550px;
+    border-radius: 30px;
+  }
+  .initiatives {
+    height: 785px;
   }
