@@ -511,13 +511,13 @@ input:not(:checked) + .accordion .collapse, input:not(:checked) + .accordion .co
   max-height: 100%;
   border-radius: 30px;
 }
-.news__grid {
+.menu-news__grid {
   display: flex;
   gap: 1.5rem;
   background-color: var(--white);
   margin: 1.5rem 0;
 }
-.news__grid h4 {
+.menu-news__grid h4 {
   flex-shrink: 1;
 }
 .copy--bigger {
@@ -717,4 +717,12 @@ p,h1,h2,h3,h4,h5 {
   }
   .initiatives {
     height: 785px;
+  }
+  /*NEWS SECTION*/
+  .news__article {
+    grid-column: span 4;
+    max-width: 100%;
+  }
+  .news-thumbnail {
+    width: 100%;
   }
