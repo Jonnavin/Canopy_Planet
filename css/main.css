@@ -260,6 +260,7 @@ h1,h2,h3,h4,h5,h6 {
   gap: 1rem;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 }
 .break {
   margin-bottom: 1.5rem;
@@ -270,6 +271,16 @@ h1,h2,h3,h4,h5,h6 {
   max-height: fit-content;
   max-width: fit-content;
   cursor: pointer;
+}
+.popup input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.popup:has(input:checked) {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
 /*TOOLBAR*/
 .toolbar {
