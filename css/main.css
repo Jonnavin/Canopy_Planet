@@ -898,3 +898,52 @@ div:has(input:focus) + .search-results {
 .fit {
   max-width: 100%;
 }
+.greeting-card {
+  animation-name: greeting-card;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--white);
+  visibility: hidden;
+  z-index: 5;
+}
+@keyframes greeting-card {
+  0%  {visibility: visible}
+  100% {visibility: visible}
+  0% {gap: 100vw;}
+  60% {gap: 100vw}
+  80% {gap: 0}
+  0% {top: 0}
+  90% {top: 0}
+  100% {top: -100%}
+}
+.special-image {
+  position: relative;
+  top: 5%;
+  animation-name: greeting;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+.greeting {
+  font-size: 18rem;
+  font-family: "carbona-variable",sans-serif;
+  font-variation-settings: 'wght' 600, 'MONO' 100, 'slnt' 0;
+}
+@keyframes greeting {
+  0% {transform: rotate(0deg)}
+  80% {transform: rotate(1000deg)}
+  100% {transform: rotate(1000deg);}
+  0% {left: -55vw}
+  60% {left: -55vw}
+  80% {left: 0}
+  0% {scale: 2;}
+  20% {scale: 1;}
+  40% {scale: 2;}
+  60% {scale: 1;}
+}
