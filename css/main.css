@@ -826,7 +826,7 @@ div:has(input:focus) + .search-results {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all ease-in-out .4s .1s;
+  transition: all ease-in-out .4s;
 }
 .news__article:hover .pre-thumbnail {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
