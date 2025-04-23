@@ -853,3 +853,48 @@ div:has(input:focus) + .search-results {
 .news__article:first-child:hover .border-rad {
   border-radius: 30px;
 }
+.bubble {
+  width: 2.45vw;
+  aspect-ratio: 1/1;
+  background-color: var(--purple);
+  border-radius: 2vw;
+  flex-shrink: 0;
+  scale: 0;
+  order: 1;
+}
+.bubble__plus {
+  filter: invert(1);
+  box-sizing: content-box;
+  max-width: 43%;
+  padding: 29%;
+}
+.impact__link {
+  position: relative;
+  gap: 1.5rem;
+}
+.impact__link:hover .bubble {
+  scale: 1;
+  order: 0;
+  transition: scale .4s;
+}
+.impact__nav li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--grey);
+}
+.impact__nav li:first-child {
+  border-top: 1px solid var(--grey);
+}
+.hover {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  scale: 0;
+}
+.impact__link:hover .hover {
+  scale: 1;
+  transition: scale .4s;
+}
+.fit {
+  max-width: 100%;
+}
