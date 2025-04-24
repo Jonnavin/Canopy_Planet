@@ -548,10 +548,11 @@ div.lrbutton {
   height: fit-content;
   border-radius: 5px;
 }
-a.lrbutton img{
-  padding: 11.8px 12px;
+a.lrbutton {
+  display: grid;
+  padding: 11px;
 }
-.l img{
+.l img {
   transform: rotate(180deg);
 }
 .thin {
@@ -1015,16 +1016,21 @@ a:hover + .behind-box {
   display: grid;
   align-items: center;
 }
-.icon-slider div {
+.slider-container {
+  height: 100%;
   gap: 50%;
+}
+.icon-box {
+  aspect-ratio: 1/1;
+  height: 100%;
   position: relative;
-  left: -150%;
+  left: -100%;
   transition: all ease-in-out .3s;
 }
-.icon-slider div img {
-  max-width: 100%;
+.icon-slider img {
+  width: 100%;
 }
-a:hover .icon-slider div {
+a:hover .icon-box {
   left: 0;
 }
 .donate__bubble {
