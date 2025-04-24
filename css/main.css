@@ -167,7 +167,7 @@ h1,h2,h3,h4,h5,h6 {
   transition: background-color ease-in-out .4s, color ease-in-out .4s;
 }
 .button .icon-slider {
-  width: 17.25px;
+  height: 100%;
 }
 .button__link {
   padding: 21px;
@@ -343,6 +343,14 @@ header {
   position: absolute;
   top: 5rem;
   left: 0;
+}
+.sticky .button--white:hover {
+  background-color: var(--white);
+  color: var(--near-black);
+  border: 1px solid var(--near-black);
+}
+.sticky .button--white:hover img {
+  filter: invert(0);
 }
 /*COOKIES*/
 .cookie__toggle {
@@ -1070,4 +1078,36 @@ a:hover .icon-box {
 }
 .donate__link:hover p:after {
   width: 0;
+}
+/*BRANDS SPONSERS SECTION*/
+.partners {
+  gap: 2rem;
+}
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows:1fr 1fr;
+  max-width: 90vw;
+}
+.brand {
+  display: grid;
+  align-items: center;
+  aspect-ratio: 225/210;
+  padding: 1.5rem;
+  border: 0.5px solid var(--grey);
+}
+.brand img {
+  max-width: 100%;
+}
+/*NEWSLETTER*/
+.newsletter__box {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--purple);
+    border-radius: 30px;
+    padding: 5.5rem;
+}
+.newsletter__intro {
+  padding-right: 10rem;
 }

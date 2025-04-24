@@ -12,10 +12,24 @@
     <article class="component">
         <h3 class="component__name">Donate Button</h3>
         <div class="component__img">
-            <img src="img/sock-donate.png" srcset="img/sock-donate.png 1.4x" alt="Outside of Canada Donation button">
+            <img src="img/newsletter.png" srcset="img/newsletter.png 1.25x" alt="Outside of Canada Donation button">
         </div>
         <div class="component__code">
-            <div class="button button--white lrbutton"><a href="#!" class="lrbutton l center"><div class="icon-slider"><div class="button__grid slider-container"><div class="icon-box"><img src="../img/arrow.png" alt=""></div><div class="icon-box"><img src="../img/arrow.png" alt=""></div></div></div></a></div>
+            <section class="newsletter column-flex">
+                <h2 class="section-heading heading--upper heading--no-big">Newsletter</h2>
+                <div class="newsletter__box">
+                    <div class="newsletter__intro newsletter__item column-flex">
+                        <h3 class="heading--big heading--upper">Stay updated</h3>
+                        <p class="copy--big">Learn about how we work to conserve the world’s forests and stabilize our climate. Sign up to receive news, important updates about our work, and ways you can take action.</p>
+                    </div>
+                    <div class="newsletter__form newsletter__item column-flex">
+                        <label for="fullname"><input class="newsletter__input" type="text" name="fullname"></label>
+                        <label for="email"><input class="newsletter__input" type="text" name="email"></label>
+                        <p class="check-wrapper"><input class="checkbox" type="checkbox" name="emailme[]" value="emailme"> Yes, please send me updates via Email!</p>
+                        <input class="button button--on-purple" type="submit" value="Sign Up">
+                    </div>
+                </div>
+            </section>
         </div>
     </article>
 </body>
