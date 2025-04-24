@@ -781,6 +781,7 @@ div:has(input:focus) + .search-results {
   max-width: 90%;
   text-transform: none;
 }
+/*MISSION SECTION*/
 .bump {
   margin-top: 3.5rem;
 }
@@ -795,6 +796,7 @@ div:has(input:focus) + .search-results {
   width: 58.47vw;
   margin: auto;
 }
+/*PRE FOOTER*/
 .article__square {
   display: flex;
   max-width: fit-content;
@@ -853,6 +855,7 @@ div:has(input:focus) + .search-results {
 .news__article:first-child:hover .border-rad {
   border-radius: 30px;
 }
+/*IMPACT SECTION*/
 .bubble {
   width: 2.45vw;
   aspect-ratio: 1/1;
@@ -898,6 +901,7 @@ div:has(input:focus) + .search-results {
 .fit {
   max-width: 100%;
 }
+/*GREETING CARD*/
 .greeting-card {
   animation-name: greeting-card;
   animation-duration: 5s;
@@ -946,4 +950,55 @@ div:has(input:focus) + .search-results {
   20% {scale: 1;}
   40% {scale: 2;}
   60% {scale: 1;}
+}
+/*CTA SECTION*/
+.cta {
+  text-align: center;
+  gap: .5rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.behind {
+  z-index: 0;
+  height: 100%;
+  animation-name: behind;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+}
+.cta:has(a:hover) a:not(:hover) {
+  color: var(--grey);
+}
+.cta a:hover {
+  color: var(--black);
+}
+.behind-box {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: all ease-in-out .4s;
+}
+@keyframes behind {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+.cta__link {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-sans-heading);
+  transition: color ease-in-out .4s;
+}
+a:not(:hover) + .behind-box {
+  opacity: 0;
+}
+a:hover + .behind-box {
+  opacity: 1;
+}
+.cta > .behind-box {
+  opacity: 1;
+}
+.cta:has(a:hover) > .behind-box {
+  opacity: 0;
 }
