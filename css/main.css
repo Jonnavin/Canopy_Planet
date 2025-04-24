@@ -166,6 +166,9 @@ h1,h2,h3,h4,h5,h6 {
   border: 1px solid transparent;
   transition: background-color ease-in-out .4s, color ease-in-out .4s;
 }
+.button .icon-slider {
+  width: 17.25px;
+}
 .button__link {
   padding: 21px;
   margin: 0;
@@ -185,7 +188,7 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--white);
   border: 1px solid transparent;
 }
-.button:hover img {
+.button--white:hover img {
   filter: invert(1);
 }
 .button img {
@@ -236,7 +239,7 @@ h1,h2,h3,h4,h5,h6 {
   border: 1px solid var(--near-black);
   color: var(--near-black);
 }
-.button--black a:has(img) {
+.button--black:hover img {
   filter: invert(1);
 }
 .small__link {
@@ -297,6 +300,7 @@ button {
   padding: 0;
 }
 .search {
+  display: grid;
   padding: 20px;
   margin: 0;
 }
@@ -327,6 +331,7 @@ header {
 }
 .center {
   text-align: center;
+  align-self: center;
 }
 .hero__heading {
   padding: 40vh 0 10vh 0;
@@ -1001,4 +1006,62 @@ a:hover + .behind-box {
 }
 .cta:has(a:hover) > .behind-box {
   opacity: 0;
+}
+/*DONATE IN CANADA*/
+.icon-slider {
+  aspect-ratio: 1/1;
+  width: 1rem;
+  clip-path: fill-box;
+  display: grid;
+  align-items: center;
+}
+.icon-slider div {
+  gap: 50%;
+  position: relative;
+  left: -150%;
+  transition: all ease-in-out .3s;
+}
+.icon-slider div img {
+  max-width: 100%;
+}
+a:hover .icon-slider div {
+  left: 0;
+}
+.donate__bubble {
+  border-radius: 50%;
+  background-color: var(--purple);
+  max-width: 14rem;
+  aspect-ratio: 1/1;
+  transition: all ease-in-out .4s;
+}
+.donate__bubble:hover {
+  background-color: var(--black);
+}
+.donate__heading {
+  padding: 2rem;
+  font-size: 2rem;
+  line-height: .9em;
+  transform: rotate(-10deg);
+}
+.donate {
+  gap: 1.5rem;
+}
+.donate__link {
+  gap: .5rem;
+}
+.donate__link p {
+  position: relative;
+  top: -1px;
+}
+.donate__link p:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--black);
+  position: absolute;
+  transition: all ease-in-out .4s;
+}
+.donate__link:hover p:after {
+  width: 0;
 }
