@@ -660,7 +660,7 @@ input:not(:checked) + .menu__accordion .plumin {
   padding: 1.25rem;
   border: 1px solid var(--black);
 }
-input[type="text"] {
+.searchbar input[type="text"] {
   background-color: transparent;
   border: none;
   width: 100%;
@@ -668,7 +668,7 @@ input[type="text"] {
 input[type="text"]:focus {
   outline: none;
 }
-input[type="submit"] {
+.searchbar input[type="submit"] {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -1110,4 +1110,30 @@ a:hover .icon-box {
 }
 .newsletter__intro {
   padding-right: 10rem;
+}
+.newsletter__input {
+    color: white;
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.newsletter__item {
+  gap: 1.5rem;
+}
+input.button {
+  border: 1px solid transparent;
+  position: relative;
+  top: -2px;
+}
+input.button:hover {
+  background-color: var(--purple);
+  border: 1px solid var(--white);
+}
+.label {
+  font-size: 1.5rem;
+}
+.newsletter:has(input[type="text"]:focus) .label {
+  font-size: smaller;
 }
