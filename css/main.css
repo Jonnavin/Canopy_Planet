@@ -627,6 +627,13 @@ input:checked + .menu__accordion .accordion__list {
   max-height: 300px;
   color: var(--near-black);
 }
+.molecule {
+  overflow: hidden;
+  max-height: 0;
+}
+input:checked + .menu__accordion .molecule {
+  max-height: fit-content;
+}
 .plumin {
   height: 1.75vw;
   aspect-ratio: 1/1;
@@ -645,7 +652,7 @@ input:not(:checked) + .menu__accordion .plumin {
   padding: 1.5rem;
   width: 520px;
   border-radius: 34px;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 .button--menu {
   max-width: none;
@@ -929,7 +936,7 @@ div:has(input:focus) + .search-results {
   width: 100vw;
   background-color: var(--white);
   visibility: hidden;
-  z-index: 5;
+  z-index: 11;
 }
 @keyframes greeting-card {
   0%  {visibility: visible}
@@ -943,13 +950,16 @@ div:has(input:focus) + .search-results {
 }
 .special-image {
   position: relative;
-  top: 5%;
+  top: 1%;
   animation-name: greeting;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
 }
+.special-image img {
+  width: 13vw;
+}
 .greeting {
-  font-size: 18rem;
+  font-size: 20vw;
   font-family: "carbona-variable",sans-serif;
   font-variation-settings: 'wght' 600, 'MONO' 100, 'slnt' 0;
 }
@@ -1231,4 +1241,36 @@ footer {
   border-bottom: 1px solid var(--black);
   padding: 2rem;
   text-transform: capitalize;
+  }
+  /*COMP NAV*/
+  #navigation {
+    visibility: hidden;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    z-index: 10;
+  }
+  #navigation:not(:target) * {
+    transition: all 0s;
+  }
+  #navigation:target {
+    visibility: visible;
+  }
+  .nav-toggle:has(#navigation:target) .comp-nav {
+    visibility: hidden;
+  }
+  .comp-nav {
+    z-index: 10;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  .cover {
+    visibility: visible;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(grey);
+  }
+  body:has(#navigation:target) .cover {
+    visibility: visible;
   }
