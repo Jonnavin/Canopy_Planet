@@ -1278,3 +1278,6 @@ footer {
   body:has(#navigation:target) .cover {
     visibility: visible;
   }
+  .solution {
+clip-path: polygon(0% 0%, 100% 0%, 100 100%, 0% 80%);
+}
