@@ -1230,51 +1230,54 @@ input[type="checkbox"]:checked:after {
 /*FOOTER*/
 footer {
   border-top: 1px solid var(--black);
-  }
-  .footer__list {
+}
+.footer__list {
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding: 0 4.5rem;
-  }
-  .footer__row {
+}
+.footer__row {
   border-bottom: 1px solid var(--black);
   padding: 2rem;
   text-transform: capitalize;
+}
+/*COMP NAV*/
+#navigation {
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  z-index: 10;
+}
+#navigation:not(:target) * {
+  transition: all 0s;
+}
+#navigation:target {
+  visibility: visible;
+}
+.nav-toggle:has(#navigation:target) .comp-nav {
+  visibility: hidden;
+}
+.comp-nav {
+  z-index: 10;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+.cover {
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgray;
+  z-index: 9;
+  opacity: .5;
   }
-  /*COMP NAV*/
-  #navigation {
-    visibility: hidden;
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    z-index: 10;
-  }
-  #navigation:not(:target) * {
-    transition: all 0s;
-  }
-  #navigation:target {
-    visibility: visible;
-  }
-  .nav-toggle:has(#navigation:target) .comp-nav {
-    visibility: hidden;
-  }
-  .comp-nav {
-    z-index: 10;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-  }
-  .cover {
-    position: fixed;
-    top: 0;
-    visibility: hidden;
-    height: 100vh;
-    width: 100vw;
-    background-color: lightgray;
-    z-index: 9;
-    opacity: .5;
-  }
-  body:has(#navigation:target) .cover {
-    visibility: visible;
-  }
+body:has(#navigation:target) .cover {
+  visibility: visible;
+}
+.solution {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
