@@ -442,6 +442,7 @@ input:checked + .accordion img {
   text-align: left;
   font-size: 12px;
   font-weight: 200;
+  background: #efefef;
   color: var(--near-black);
   font-family: var(--font-sans-heading);
   border-bottom: 1px solid #e8e8e8;
@@ -631,6 +632,10 @@ input:checked + .menu__accordion .accordion__list {
 .molecule {
   overflow: hidden;
   max-height: 0;
+}
+.molecule > * {
+  text-shadow: 1px 1px 10px #0003;
+  box-shadow: 1px 1px 10px #0003;
 }
 input:checked + .menu__accordion .molecule {
   max-height: fit-content;
@@ -1264,8 +1269,8 @@ footer {
 .comp-nav {
   z-index: 10;
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: .5rem;
+  right: .5rem;
 }
 .cover {
   position: fixed;
@@ -1335,4 +1340,7 @@ left: 110%;
 }
 .article:not(:target) {
   z-index: 8;
+}
+.display {
+  max-height: 3rem;
 }
