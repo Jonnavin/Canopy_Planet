@@ -592,8 +592,6 @@ p,h1,h2,h3,h4,h5 {
   position: relative;
 }
 .menu-ac input {
-  height: 0;
-  width: 0;
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -628,14 +626,6 @@ input:checked + .menu__accordion {
 input:checked + .menu__accordion .accordion__list {
   max-height: 300px;
   color: var(--near-black);
-}
-.molecule {
-  overflow: hidden;
-  max-height: 0;
-}
-.molecule > * {
-  text-shadow: 1px 1px 10px #0003;
-  box-shadow: 1px 1px 10px #0003;
 }
 input:checked + .menu__accordion .molecule {
   max-height: fit-content;
@@ -1343,4 +1333,45 @@ left: 110%;
 }
 .display {
   max-height: 3rem;
+}
+.menu-ac:has(.molecule) {
+  margin-top: 1.5rem;
+}
+.molecule .article__icon {
+  position: static;
+}
+.molecule {
+  overflow: hidden;
+  max-height: 0;
+}
+.molecule > * {
+  text-shadow: 0px 0px 10px #0003;
+  box-shadow: 0px 0px 10px #0003;
+}
+.molecule .bubble {
+  scale: 1;
+}
+.molecule .hover {
+  scale: 1;
+  position: static;
+  transform: none;
+  max-width: 20rem;
+}
+.molecule .behind-box {
+  position: static;
+  transform: none;
+  opacity: 1;
+}
+.molecule .brand {
+  max-width: fit-content;
+}
+.molecule .label {
+  position:static
+}
+.molecule input {
+  visibility: visible;
+  position: static;
+}
+.molecule .feat-icon {
+  position: static;
 }
