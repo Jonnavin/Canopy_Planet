@@ -544,6 +544,7 @@ input:not(:checked) + .accordion .collapse, input:not(:checked) + .accordion .co
   gap: 1.5rem;
   background-color: var(--white);
   margin: 1.5rem 0;
+  width: 100%;
 }
 .menu-news__grid h4 {
   flex-shrink: 1;
@@ -572,7 +573,7 @@ a.lrbutton {
   background-color: var(--white);
   border-radius: 20px;
   border: 1px solid var(--black);
-  max-width: fit-content;
+  max-width: 100%;
 }
 p,h1,h2,h3,h4,h5 {
   margin: 0;
@@ -652,7 +653,8 @@ input:not(:checked) + .menu__accordion .plumin {
   padding: 1.5rem;
   width: 520px;
   border-radius: 34px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .button--menu {
   max-width: none;
@@ -1280,4 +1282,57 @@ body:has(#navigation:target) .cover {
 }
 .solution {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+/*Carousel*/
+.article-box {
+  clip-path: fill-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.button:has(.inactive), .button:has(.inactive:hover) {
+  border: 1px solid var(--grey);
+  background: var(--white);
+}
+.button:has(.inactive) .icon-box, .button:has(.inactive:hover) .icon-box {
+  left: 0;
+}
+.button:has(.inactive) a {
+  cursor: default;
+}
+.inactive img, .inactive:hover img {
+  filter: invert(0.5);
+}
+.article-slide {
+  position: relative;
+  transition: all ease-in-out .4s;
+  background-color: var(--white);
+}
+.article:target .article-slide {
+  left: 0;
+}
+.article:not(:target) .article-slide {
+  left: -110%;
+}
+.article:target + .article .article-slide,
+.article:target + .article + .article .article-slide,
+.article:target + .article + .article + .article .article-slide, 
+.article:target + .article + .article + .article + .article .article-slide {
+left: 110%;
+}
+.article .topper {
+  scale: 0;
+}
+.article:target .topper, .menu:target .article .topper{
+  scale: 1;
+}
+.article {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+}
+.article:not(:target) {
+  z-index: 8;
 }
