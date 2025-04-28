@@ -7,6 +7,7 @@
   --black: #000;
   --white: #f7f7f7;
   --grey: #636363;
+  --light-grey: #aaa;
   --near-black: #272727;
   --green: #028102;
   --transparent: #0000;
@@ -71,7 +72,7 @@ a {
   line-height: 1.4em;
 }
 .copy {
-  font-size: normal;
+  font-size: 1em;
   line-height: 1.4em;
 }
 .copy--small {
@@ -325,7 +326,7 @@ header {
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto, auto;
+  grid-template-rows: auto auto;
   align-items: center;
   margin: 3rem;
 }
@@ -427,7 +428,7 @@ input:checked + .switch-slider {
   gap: 0;
   padding-top: 1rem;
 }
-input:checked + .accordion {
+.active .accordion {
   gap: 1.5rem;
 }
 .morepad {
@@ -435,7 +436,7 @@ input:checked + .accordion {
   padding: 0 1.5rem;
   color: var(--near-black);
 }
-input:checked + .accordion img {
+.active .accordion img {
   transform: rotate(90deg);
 }
 .cookie__table {
@@ -459,7 +460,7 @@ input:checked + .accordion img {
   margin: 0 1.5rem;
   border-radius: 7px;
 }
-input:not(:checked) + .accordion .collapse, input:not(:checked) + .accordion .collapse > * {
+.menu-ac:not(.active) .accordion .collapse, .menu-ac:not(.active) .accordion .collapse > * {
   visibility: hidden;
   max-height: 0;
   margin: 0;
@@ -554,11 +555,11 @@ input:not(:checked) + .accordion .collapse, input:not(:checked) + .accordion .co
   font-size: 1.53vw;
   margin: 0;
 }
-div.lrbutton {
+.lrbutton {
   height: fit-content;
   border-radius: 5px;
 }
-a.lrbutton {
+.lr {
   display: grid;
   padding: 11px;
 }
@@ -591,11 +592,6 @@ p,h1,h2,h3,h4,h5 {
   min-height: fit-content;
   position: relative;
 }
-.menu-ac input {
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-}
 .menu__accordion {
   padding: 1.5rem;
   display: flex;
@@ -620,14 +616,14 @@ p,h1,h2,h3,h4,h5 {
 .accordion__list li {
     padding: .75rem 0;
 }
-input:checked + .menu__accordion {
+.active .menu__accordion {
   gap: 1.5rem;
 }
-input:checked + .menu__accordion .accordion__list {
+.active .menu__accordion .accordion__list {
   max-height: 300px;
   color: var(--near-black);
 }
-input:checked + .menu__accordion .molecule {
+.active .menu__accordion .molecule {
   max-height: fit-content;
 }
 .plumin {
@@ -637,10 +633,10 @@ input:checked + .menu__accordion .molecule {
   background-repeat: no-repeat;
   background-position: center;
 }
-input:checked + .menu__accordion .plumin {
+.active .menu__accordion .plumin {
   background-image: url(../img/min.png);
 }
-input:not(:checked) + .menu__accordion .plumin {
+.menu-ac:not(.active) .menu__accordion .plumin {
   background-image: url(../img/plus.png);
 }
 .menu {
@@ -724,7 +720,7 @@ div:has(input:focus) + .search-results {
 }
 .subsection-img {
   height: 600px;
-  width: 100%px;
+  width: 100%;
   clip-path: polygon(0% -7%, 100% -23%, 100% 107%, 0% 123%);
   grid-column: 5/span 4;
 }
@@ -1154,7 +1150,7 @@ input.button:hover {
   font-size: smaller;
   top: 0;
 }
-input[type="checkbox"] {
+.check {
     appearance: none;
     background-color: var(--purple);
     margin: 0;
@@ -1164,10 +1160,10 @@ input[type="checkbox"] {
     border-radius: 0.15em;
     transform: translateY(-0.075em);
 }
-input[type="checkbox"]:hover {
+.check:hover {
   opacity: .8;
 }
-input[type="checkbox"]:checked:after {
+.check:checked:after {
   content: url(../img/check.png);
   position: absolute;
   top: 0;
@@ -1279,58 +1275,81 @@ body:has(#navigation:target) .cover {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 /*Carousel*/
-.article-box {
+.carousel-box {
   clip-path: fill-box;
   position: relative;
   width: 100%;
   height: 100%;
 }
-.button:has(.inactive), .button:has(.inactive:hover) {
-  border: 1px solid var(--grey);
-  background: var(--white);
-}
-.button:has(.inactive) .icon-box, .button:has(.inactive:hover) .icon-box {
-  left: 0;
-}
-.button:has(.inactive) a {
-  cursor: default;
-}
-.inactive img, .inactive:hover img {
-  filter: invert(0.5);
-}
-.article-slide {
-  position: relative;
-  transition: all ease-in-out .4s;
-  background-color: var(--white);
-}
-.article:target .article-slide {
-  left: 0;
-}
-.article:not(:target) .article-slide {
-  left: -110%;
-}
-.article:target + .article .article-slide,
-.article:target + .article + .article .article-slide,
-.article:target + .article + .article + .article .article-slide, 
-.article:target + .article + .article + .article + .article .article-slide {
-left: 110%;
-}
-.article .topper {
-  scale: 0;
-}
-.article:target .topper, .menu:target .article .topper{
-  scale: 1;
-}
-.article {
+.slide {
   position: absolute;
-  top: -1.5rem;
+  top: 0;
   left: 0;
-  z-index: 9;
+  background-color: var(--white);
   width: 100%;
 }
-.article:not(:target) {
-  z-index: 8;
+.slide .button__grid {
+  position: relative;
+  transition: all ease-in-out .4s;
+  width: 100%;
+  z-index: 5;
 }
+.slide[data-active] .button__grid {
+  left: 0;
+}
+.slide:not([data-active]) .button__grid {
+  left: -110%;
+}
+.slide[data-active] + .slide .button__grid,
+.slide[data-active] + .slide + .slide .button__grid,
+.slide[data-active] + .slide + .slide + .slide .button__grid, 
+.slide[data-active] + .slide + .slide + .slide + .slide .button__grid {
+left: 110%;
+}
+.article-list {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel-box:has(.s1[data-active]) .page-number:after {
+  content: "1";
+}
+.carousel-box:has(.s2[data-active]) .page-number:after {
+  content: "2";
+}
+.carousel-box:has(.s3[data-active]) .page-number:after {
+  content: "3";
+}
+.carousel-box:has(.s4[data-active]) .page-number:after {
+  content: "4";
+}
+.carousel-box:has(.s5[data-active]) .page-number:after {
+  content: "5";
+}
+.carousel-box:has(.s1[data-active]) .lrbutton:has(.l) {
+  border: 1px solid var(--light-grey);
+  background: var(--white);
+}
+.carousel-box:has(.s1[data-active]) .lrbutton .l .icon-box {
+  transition: none;
+}
+.carousel-box:has(.s1[data-active]) .lrbutton:hover .l img,
+.carousel-box:has(.s1[data-active]) .lrbutton .l img {
+  filter: invert(0.5);
+}
+.carousel-box:has(.s5[data-active]) .lrbutton:has(.r) {
+  border: 1px solid var(--light-grey);
+  background: var(--white);
+}
+.carousel-box:has(.s5[data-active]) .lrbutton .r .icon-box {
+  transition: none;
+}
+.carousel-box:has(.s5[data-active]) .lrbutton:hover .r img,
+.carousel-box:has(.s5[data-active]) .lrbutton .r img {
+  filter: invert(0.5);
+}
+/*COMPONENTS PAGE ONLY*/
 .display {
   max-height: 3rem;
 }
@@ -1367,10 +1386,6 @@ left: 110%;
 }
 .molecule .label {
   position:static
-}
-.molecule input {
-  visibility: visible;
-  position: static;
 }
 .molecule .feat-icon {
   position: static;
