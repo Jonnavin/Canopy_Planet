@@ -659,14 +659,14 @@ p,h1,h2,h3,h4,h5 {
   max-height: fit-content;
 }
 /*SEARCHBAR*/
-.searchbar {
+.search-tab {
   width: 557.5px;
 }
-.searchbar__searchbar {
+.search-tab__searchbar {
   padding: 1.25rem;
   border: 1px solid var(--black);
 }
-.searchbar input[type="text"] {
+.search-tab input[type="text"] {
   background-color: transparent;
   border: none;
   width: 100%;
@@ -674,19 +674,19 @@ p,h1,h2,h3,h4,h5 {
 input[type="text"]:focus {
   outline: none;
 }
-.searchbar input[type="submit"] {
+.search-tab input[type="submit"] {
   visibility: hidden;
   position: absolute;
   top: 0;
 }
-.search-results {
+.search-tab__results {
   max-width: 100%;
-  height: 30rem;
+  height: 100%;
   color: var(--grey);
   overflow-y: scroll;
   visibility: hidden;
 }
-div:has(input:focus) + .search-results {
+div:has(input:focus) + .search-tab__results {
   visibility: visible;
 }
 /*SAD SECTION*/
