@@ -9,47 +9,47 @@
     <link href="../css/main.css" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="search-tab">
-<div class="space-flex">
-	<h2 class="sub--big">Search</h2>
-	<button class="button--x"><img src="img/x.png" srcset="img/x.png 1.25x" alt="exit"></button>
-</div>
+    <div class="search-tab column-flex menu">
+        <div class="space-flex">
+            <h2 class="sub--big">Search</h2>
+            <button class="button--x"><img src="img/x.png" srcset="../img/x.png 1.25x" alt="exit"></button>
+        </div>
 
-<div class="row-flex">
-	<div class="icon"><img src="../img/search.png" alt="">
-	<input type="text">
-	<div class="result-count row-flex"><p>12 results</p><div><img></div></div>
-	<div class="button button--black lrbutton">
-        <div class="lr">
-            <div class="icon-slider">
-                <div class="row-flex slider-container">
-                    <div class="icon-box">
-                        <img src="../img/arrow.png" alt="">
-                    </div>
-                    <div class="icon-box">
-                        <img src="../img/arrow.png" alt="">
+        <div class="menu__accordion">
+            <div class="icon"><img src="../img/search.png" alt=""></div>
+            <input type="text">
+            <div class="result-count row-flex"><p>12 results</p><div class="icon round"><img src="../img/x.png" alt=""></div></div>
+            <div class="button button--black lrbutton">
+                <div class="lr">
+                    <div class="icon-slider">
+                        <div class="row-flex slider-container">
+                            <div class="icon-box">
+                                <img src="../img/arrow.png" alt="">
+                            </div>
+                            <div class="icon-box">
+                                <img src="../img/arrow.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <ul class="search-tab__results">
+            <li>Search result 1</li>
+            <li>Search result 2</li>
+            <li>Search result 3</li>
+            <li>Search result 4</li>
+            <li>Search result 5</li>
+            <li>Search result 6</li>
+            <li>Search result 7</li>
+            <li>Search result 8</li>
+            <li>Search result 9</li>
+            <li>Search result 10</li>
+            <li>Search result 11</li>
+            <li>Search result 12</li>
+        </ul>
     </div>
-</div>
-<ul class="search-tab__results">
-	<li>Search result 1</li>
-	<li>Search result 2</li>
-	<li>Search result 3</li>
-	<li>Search result 4</li>
-	<li>Search result 5</li>
-	<li>Search result 6</li>
-	<li>Search result 7</li>
-	<li>Search result 8</li>
-	<li>Search result 9</li>
-	<li>Search result 10</li>
-	<li>Search result 11</li>
-	<li>Search result 12</li>
-</ul>
-</div>
     
     <script>
         const buttons = document.querySelectorAll("[data-carousel-button]")
