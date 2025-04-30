@@ -17,6 +17,7 @@ html {
   box-sizing: border-box;
   font-size: 15px;
   background: var(--white);
+  margin: 0;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -320,6 +321,7 @@ header {
   align-items: center;
   padding: 1rem 2.5rem;
   background: var(--white);
+  margin: 0;
 }
 /*HERO*/
 .hero {
@@ -338,7 +340,7 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   align-items: center;
-  margin: 3rem;
+  margin: 0 3rem 3rem 3rem;
 }
 .center {
   text-align: center;
@@ -371,6 +373,7 @@ header {
   position: fixed;
   left: 1rem;
   bottom: 1rem;
+  z-index: 8;
 }
 .component .cookie__toggle {
   position: static;
@@ -547,6 +550,22 @@ input:checked + .switch-slider {
   background-color: var(--white);
 }
 /*MENU*/
+.menu:target, .search-tab:target {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+body:has(.menu:target), body:has(.search-tab:target) {
+  overflow-y: hidden;
+}
+.accordion__list ul li {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
 .thumbnail {
   height: 119px;
   width: 132px;
@@ -634,6 +653,7 @@ p,h1,h2,h3,h4,h5 {
   text-transform: capitalize;
   color: transparent;
   transition: all ease-in-out .4s;
+  gap: .5rem;
 }
 .accordion__list li {
     padding: .75rem 0;
@@ -913,6 +933,10 @@ div:has(input:focus) + .search-tab__results {
 .placeholder {
   max-width: 100%;
   opacity: 0;
+}
+.moveup {
+  position: relative;
+  top: -14.5rem;
 }
 .news__article:first-child .pre-thumbnail {
   clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
@@ -1325,7 +1349,7 @@ footer {
   z-index: 9;
   opacity: .5;
   }
-body:has(#navigation:target) .cover {
+body:has(#navigation:target) .cover, body:has(.menu:target) .cover, body:has(.search-tab:target) .cover {
   visibility: visible;
 }
 .solution {
