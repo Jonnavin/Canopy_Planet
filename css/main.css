@@ -570,6 +570,7 @@ input:checked + .switch-slider {
   z-index: 10;
 }
 .menu:not(:target), .search-tab:not(:target) {
+  position: fixed;
   right: -100%;
 }
 body:has(.menu:target), body:has(.search-tab:target) {
