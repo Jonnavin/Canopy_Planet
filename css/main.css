@@ -179,7 +179,7 @@ h1,h2,h3,h4,h5,h6 {
   padding: 21px;
   margin: 0;
 }
-.header .button, .popup .button, .menu .grow-only {
+.header .button, .menu .grow-only {
   height: clamp( 37.45px, 5vw, 57.6px);
 }
 .header .button .button__link, .popup .button .button__link {
@@ -239,6 +239,7 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--white);
 }
 .button--small {
+  height: 37.45px;
   font-size: 13px;
   border-radius: 5px;
 }
@@ -823,6 +824,9 @@ div:has(input:focus) + .search-tab__results {
 }
 .initiatives:first-child .subsection-img {
   clip-path: polygon(0% 0%, 100% 0%, 100% 107%, 0% 123%);
+}
+.init {
+  padding-top: 6rem;
 }
 .initiatives:last-child .subsection-img {
   clip-path: polygon(0% -7%, 100% -23%, 100% 100%, 0% 100%);
@@ -1666,4 +1670,7 @@ and (max-width : 700px) {
   .cookie__options {
     flex-direction: column;
   }
+}
+main .section {
+  padding: 4.5rem 0;
 }
