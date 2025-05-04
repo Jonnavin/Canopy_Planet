@@ -6,9 +6,9 @@
 
 For MCAD projects in web design. For this project, I studied the design system of the [Canopy Planet Home Page](https://canopyplanet.org/)
 
-- [Initial Design Study](jonnavin.github.io/Canopy_Planet/study/)
-- [Component Library](jonnavin.github.io/Canopy_Planet/components/)
-- [Homepage Recreation](jonnavin.github.io/Canopy_Planet/)
+- [Initial Design Study](https://jonnavin.github.io/Canopy_Planet/study/)
+- [Component Library](https://jonnavin.github.io/Canopy_Planet/components/)
+- [Homepage Recreation](https://jonnavin.github.io/Canopy_Planet/)
 
 ## Author
 
