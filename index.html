@@ -10,57 +10,106 @@
     <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <!--<div class="greeting-card">
-            <p class="heading--purple greeting heading--bolder">c</p>
-            <p class="heading--purple greeting heading--bolder">a</p>
-            <p class="heading--purple greeting heading--bolder">n</p>
-            <div class="special-image"><img src="img/greeting.png" alt=""></div>
-            <p class="heading--purple greeting heading--bolder">p</p>
-            <p class="heading--purple greeting heading--bolder">y</p>
-        </div>-->
+        <div class="greeting-card">
+            <p class="heading--purple greeting-card__title heading--bolder">c</p>
+            <p class="heading--purple greeting-card__title heading--bolder">a</p>
+            <p class="heading--purple greeting-card__title heading--bolder">n</p>
+            <div class="greeting-card__img">
+                <img src="img/greeting.png" alt="">
+            </div>
+            <p class="heading--purple greeting-card__title heading--bolder">p</p>
+            <p class="heading--purple greeting-card__title heading--bolder">y</p>
+        </div>
 
         <header class="space-flex header">
             <div>
-                <img class="page-logo" src="img/logo.png" srcset="img/logo.png 1.4x" alt="canopy logo">
+                <img class="header__logo" src="img/logo.png" srcset="img/logo.png 1.4x" alt="canopy logo">
             </div>
-            <div class="toolbar">
+            <div class="header__toolbar">
                 <a href="#!" class="link shrink">Tools and resources</a>
-                <div class="button button--white shrink"><a href="#search" class="search center"><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/search.png" alt=""></div><div class="icon-box"><img src="img/search.png" alt=""></div></div></div></a></div>
-                <div class="button"><a href="#!"><p class="button__link">Get involved</p></a></div>
-                <div class="button button--black"><a href="#menu"><div class="button__link row-flex"><p class="shrink">Menu</p><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/menu.png" alt=""></div><div class="icon-box"><img src="img/menu.png" alt=""></div></div></div></div></a></div>
+                <div class="button button--white shrink">
+                    <a href="#search" class="search center">
+                        <div class="icon-slide">
+                            <div class="row-flex icon-slide__container">
+                                <div class="icon-slide__constraint">
+                                    <img src="img/search.png" alt="">
+                                </div>
+                                <div class="icon-slide__constraint">
+                                    <img src="img/search.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="#!">
+                        <p class="button__link">Get involved</p>
+                    </a>
+                </div>
+                <div class="button button--black">
+                    <a href="#menu">
+                        <div class="button__link row-flex">
+                            <p class="shrink">Menu</p>
+                            <div class="icon-slide">
+                                <div class="row-flex icon-slide__container">
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/menu.png" alt="">
+                                    </div>
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/menu.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </header>
 
-        <div class="cookie__toggle"><a href="#cookie"><img src="img/cookie.svg" alt="cookie toggle"></a></div>
+        <div class="cookie-toggle">
+            <a href="#cookie">
+                <img src="img/cookie.svg" alt="cookie toggle">
+            </a>
+        </div>
+
         <div id="cookie">
             <div class="cookies">
                 <div class="space-flex space-flex--cookies">
                     <h3 class="heading--bolder sub heading--wide">Customize Consent Preferences</h3>
-                    <div><a href="#!"><img src="img/x.png" srcset="img/x.png 1.25x" alt="exit"></a></div>
+                    <div>
+                        <a href="#!">
+                            <img src="img/x.png" srcset="img/x.png 1.25x" alt="exit">
+                        </a>
+                    </div>
                 </div>
-
-                <div class="scroll column-flex">
-                    <div class="pad">
-                        <p class="copy--small bold">We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about 
-                        all cookies under each consent category below.</p>
-                        <p class="copy--small bold">The cookies that are categorized as "Necessary" are stored on your browser as they are essential for enabling the basic 
-                        functionalities of the site. ... <span class="blue">Show more</span></p>    
-                    </div>            
-                    <div class="menu-ac">
-                        <div class="bg-white accordion column-flex">
+                <div class="cookies__scroll column-flex">
+                    <div class="cookies__info">
+                        <p class="copy--small bold">We use cookies to help you navigate efficiently and perform certain
+                            functions. You will find detailed information about
+                            all cookies under each consent category below.</p>
+                        <p class="copy--small bold">The cookies that are categorized as "Necessary" are stored on your browser
+                            as they are essential for enabling the basic
+                            functionalities of the site. ... <span class="blue">Show more</span></p>
+                    </div>
+                    <div class="accordion-toggle">
+                        <div class="accordion column-flex">
                             <div class="column-flex">
                                 <div class="space-flex">
                                     <div class="row-flex">
-                                        <div class="toggle-arrow"><img src="img/togglearrow.png" alt="toggle arrow"></div>
+                                        <div class="accordion__toggle-arrow">
+                                            <img src="img/togglearrow.png" alt="toggle arrow">
+                                        </div>
                                         <h4 class="heading--bolder sub">Necessary</h4>
                                     </div>
                                     <p class="green heading--bolder">Always Active</p>
                                 </div>
-                                <p class="copy--small morepad">Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or 
-                                adjusting your consent preferences. These cookies do not store any personally identifiable data.</p>
+                                <p class="copy--small accordion__blurb">Necessary cookies are required to enable the basic features of
+                                    this site, such as providing secure log-in or
+                                    adjusting your consent preferences. These cookies do not store any personally identifiable
+                                    data.</p>
                             </div>
-                            <div class="collapse">
-                                <table class="cookie__table">
+                            <div class="accordion__collapse">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_cid</td>
@@ -71,11 +120,13 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This cookie is necessary 
-                                        for the platform to function properly and securely, as it helps us detect and prevent fraud.</td>
+                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This
+                                            cookie is necessary
+                                            for the platform to function properly and securely, as it helps us detect and
+                                            prevent fraud.</td>
                                     </tr>
                                 </table>
-                                <table class="cookie__table">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_func</td>
@@ -86,30 +137,44 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works properly on your 
-                                        site. This cookie collects and stores data that allows our platform to provide a better and more 
-                                        personalized donation experience for visitors. The information stored in this file helps us optimize a 
-                                        visitor's interaction with various elements on site, adjusting to their needs and preferences.</td>
+                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works
+                                            properly on your
+                                            site. This cookie collects and stores data that allows our platform to provide a
+                                            better and more
+                                            personalized donation experience for visitors. The information stored in this file
+                                            helps us optimize a
+                                            visitor's interaction with various elements on site, adjusting to their needs and
+                                            preferences.</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="menu-ac">
-                        <div class="bg-white accordion column-flex">
+                    <div class="accordion-toggle">
+                        <div class="accordion column-flex">
                             <div class="column-flex">
                                 <div class="space-flex">
                                     <div class="row-flex">
-                                        <div class="toggle-arrow"><img src="img/togglearrow.png" alt="toggle arrow"></div>
+                                        <div class="accordion__toggle-arrow">
+                                            <img src="img/togglearrow.png" alt="toggle arrow">
+                                        </div>
                                         <h4 class="heading--bolder sub">Functional</h4>
                                     </div>
-                                    <label class="switch"><input type="checkbox"><span class="switch-slider"><span class="switch-ball"></span></span></label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__slider">
+                                            <span
+                                                class="switch__ball">
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
-                                <p class="copy--small morepad">Functional cookies help perform certain functionalities like sharing the content of the website on social media 
-                                platforms, collecting feedback, and other third-party features.</p>
+                                <p class="copy--small accordion__blurb">Functional cookies help perform certain functionalities like
+                                    sharing the content of the website on social media
+                                    platforms, collecting feedback, and other third-party features.</p>
                             </div>
-                            <div class="collapse">
-                                <table class="cookie__table">
+                            <div class="accordion__collapse">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_cid</td>
@@ -120,11 +185,13 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This cookie is necessary 
-                                        for the platform to function properly and securely, as it helps us detect and prevent fraud.</td>
+                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This
+                                            cookie is necessary
+                                            for the platform to function properly and securely, as it helps us detect and
+                                            prevent fraud.</td>
                                     </tr>
                                 </table>
-                                <table class="cookie__table">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_func</td>
@@ -135,30 +202,44 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works properly on your 
-                                        site. This cookie collects and stores data that allows our platform to provide a better and more 
-                                        personalized donation experience for visitors. The information stored in this file helps us optimize a 
-                                        visitor's interaction with various elements on site, adjusting to their needs and preferences.</td>
+                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works
+                                            properly on your
+                                            site. This cookie collects and stores data that allows our platform to provide a
+                                            better and more
+                                            personalized donation experience for visitors. The information stored in this file
+                                            helps us optimize a
+                                            visitor's interaction with various elements on site, adjusting to their needs and
+                                            preferences.</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="menu-ac">
-                        <div class="bg-white accordion column-flex">
+                    <div class="accordion-toggle">
+                        <div class="accordion column-flex">
                             <div class="column-flex">
                                 <div class="space-flex">
                                     <div class="row-flex">
-                                        <div class="toggle-arrow"><img src="img/togglearrow.png" alt="toggle arrow"></div>
+                                        <div class="accordion__toggle-arrow">
+                                            <img src="img/togglearrow.png" alt="toggle arrow">
+                                        </div>
                                         <h4 class="heading--bolder sub">Analytics</h4>
                                     </div>
-                                    <label class="switch"><input type="checkbox"><span class="switch-slider"><span class="switch-ball"></span></span></label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__slider">
+                                            <span
+                                                class="switch__ball">
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
-                                <p class="copy--small morepad">Analytical cookies are used to understand how visitors interact with the website. These cookies help provide 
-                                information on metrics such as the number of visitors, bounce rate, traffic source, etc.</p>
+                                <p class="copy--small accordion__blurb">Analytical cookies are used to understand how visitors interact
+                                    with the website. These cookies help provide
+                                    information on metrics such as the number of visitors, bounce rate, traffic source, etc.</p>
                             </div>
-                            <div class="collapse">
-                                <table class="cookie__table">
+                            <div class="accordion__collapse">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_cid</td>
@@ -169,11 +250,13 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This cookie is necessary 
-                                        for the platform to function properly and securely, as it helps us detect and prevent fraud.</td>
+                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This
+                                            cookie is necessary
+                                            for the platform to function properly and securely, as it helps us detect and
+                                            prevent fraud.</td>
                                     </tr>
                                 </table>
-                                <table class="cookie__table">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_func</td>
@@ -184,30 +267,44 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works properly on your 
-                                        site. This cookie collects and stores data that allows our platform to provide a better and more 
-                                        personalized donation experience for visitors. The information stored in this file helps us optimize a 
-                                        visitor's interaction with various elements on site, adjusting to their needs and preferences.</td>
+                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works
+                                            properly on your
+                                            site. This cookie collects and stores data that allows our platform to provide a
+                                            better and more
+                                            personalized donation experience for visitors. The information stored in this file
+                                            helps us optimize a
+                                            visitor's interaction with various elements on site, adjusting to their needs and
+                                            preferences.</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="menu-ac">
-                        <div class="bg-white accordion column-flex">
+                    <div class="accordion-toggle">
+                        <div class="accordion column-flex">
                             <div class="column-flex">
                                 <div class="space-flex">
                                     <div class="row-flex">
-                                        <div class="toggle-arrow"><img src="img/togglearrow.png" alt="toggle arrow"></div>
+                                        <div class="accordion__toggle-arrow">
+                                            <img src="img/togglearrow.png" alt="toggle arrow">
+                                        </div>
                                         <h4 class="heading--bolder sub">Performance</h4>
                                     </div>
-                                    <label class="switch"><input type="checkbox"><span class="switch-slider"><span class="switch-ball"></span></span></label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__slider">
+                                            <span
+                                                class="switch__ball">
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
-                                <p class="copy--small morepad">Performance cookies are used to understand and analyze the key performance indexes of the website which helps 
-                                in delivering a better user experience for the visitors.</p>
+                                <p class="copy--small accordion__blurb">Performance cookies are used to understand and analyze the key
+                                    performance indexes of the website which helps
+                                    in delivering a better user experience for the visitors.</p>
                             </div>
-                            <div class="collapse">
-                                <table class="cookie__table">
+                            <div class="accordion__collapse">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_cid</td>
@@ -218,11 +315,13 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This cookie is necessary 
-                                        for the platform to function properly and securely, as it helps us detect and prevent fraud.</td>
+                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This
+                                            cookie is necessary
+                                            for the platform to function properly and securely, as it helps us detect and
+                                            prevent fraud.</td>
                                     </tr>
                                 </table>
-                                <table class="cookie__table">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_func</td>
@@ -233,30 +332,44 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works properly on your 
-                                        site. This cookie collects and stores data that allows our platform to provide a better and more 
-                                        personalized donation experience for visitors. The information stored in this file helps us optimize a 
-                                        visitor's interaction with various elements on site, adjusting to their needs and preferences.</td>
+                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works
+                                            properly on your
+                                            site. This cookie collects and stores data that allows our platform to provide a
+                                            better and more
+                                            personalized donation experience for visitors. The information stored in this file
+                                            helps us optimize a
+                                            visitor's interaction with various elements on site, adjusting to their needs and
+                                            preferences.</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="menu-ac">
-                        <div class="bg-white accordion column-flex">
+                    <div class="accordion-toggle">
+                        <div class="accordion column-flex">
                             <div class="column-flex">
                                 <div class="space-flex">
                                     <div class="row-flex">
-                                        <div class="toggle-arrow"><img src="img/togglearrow.png" alt="toggle arrow"></div>
+                                        <div class="accordion__toggle-arrow">
+                                            <img src="img/togglearrow.png" alt="toggle arrow">
+                                        </div>
                                         <h4 class="heading--bolder sub">Advertisement</h4>
                                     </div>
-                                    <label class="switch"><input type="checkbox"><span class="switch-slider"><span class="switch-ball"></span></span></label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__slider">
+                                            <span
+                                                class="switch__ball">
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
-                                <p class="copy--small morepad">Advertisement cookies are used to provide visitors with customized advertisements based on the pages you 
-                                visited previously and to analyze the effectiveness of the ad campaigns.</p>
+                                <p class="copy--small accordion__blurb">Advertisement cookies are used to provide visitors with
+                                    customized advertisements based on the pages you
+                                    visited previously and to analyze the effectiveness of the ad campaigns.</p>
                             </div>
-                            <div class="collapse">
-                                <table class="cookie__table">
+                            <div class="accordion__collapse">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_cid</td>
@@ -267,11 +380,13 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This cookie is necessary 
-                                        for the platform to function properly and securely, as it helps us detect and prevent fraud.</td>
+                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This
+                                            cookie is necessary
+                                            for the platform to function properly and securely, as it helps us detect and
+                                            prevent fraud.</td>
                                     </tr>
                                 </table>
-                                <table class="cookie__table">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_func</td>
@@ -282,30 +397,44 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works properly on your 
-                                        site. This cookie collects and stores data that allows our platform to provide a better and more 
-                                        personalized donation experience for visitors. The information stored in this file helps us optimize a 
-                                        visitor's interaction with various elements on site, adjusting to their needs and preferences.</td>
+                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works
+                                            properly on your
+                                            site. This cookie collects and stores data that allows our platform to provide a
+                                            better and more
+                                            personalized donation experience for visitors. The information stored in this file
+                                            helps us optimize a
+                                            visitor's interaction with various elements on site, adjusting to their needs and
+                                            preferences.</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="menu-ac">
-                        <div class="bg-white accordion column-flex">
+                    <div class="accordion-toggle">
+                        <div class="accordion column-flex">
                             <div class="column-flex">
                                 <div class="space-flex">
                                     <div class="row-flex">
-                                        <div class="toggle-arrow"><img src="img/togglearrow.png" alt="toggle arrow"></div>
+                                        <div class="accordion__toggle-arrow">
+                                            <img src="img/togglearrow.png" alt="toggle arrow">
+                                        </div>
                                         <h4 class="heading--bolder sub">Uncategorized</h4>
                                     </div>
-                                    <label class="switch"><input type="checkbox"><span class="switch-slider"><span class="switch-ball"></span></span></label>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="switch__slider">
+                                            <span
+                                                class="switch__ball">
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
-                                <p class="copy--small morepad">Other uncategorized cookies are those that are being analyzed and have not been classified into a category 
-                                as yet.</p>
+                                <p class="copy--small accordion__blurb">Other uncategorized cookies are those that are being analyzed and
+                                    have not been classified into a category
+                                    as yet.</p>
                             </div>
-                            <div class="collapse">
-                                <table class="cookie__table">
+                            <div class="accordion__collapse">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_cid</td>
@@ -316,11 +445,13 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This cookie is necessary 
-                                        for the platform to function properly and securely, as it helps us detect and prevent fraud.</td>
+                                        <td>This cookie is set by Fundraise Up, and is used to identify a user’s browser. This
+                                            cookie is necessary
+                                            for the platform to function properly and securely, as it helps us detect and
+                                            prevent fraud.</td>
                                     </tr>
                                 </table>
-                                <table class="cookie__table">
+                                <table class="accordion__table">
                                     <tr>
                                         <th>Cookie</th>
                                         <td>fundraiseup_func</td>
@@ -331,23 +462,39 @@
                                     </tr>
                                     <tr>
                                         <th>Description</th>
-                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works properly on your 
-                                        site. This cookie collects and stores data that allows our platform to provide a better and more 
-                                        personalized donation experience for visitors. The information stored in this file helps us optimize a 
-                                        visitor's interaction with various elements on site, adjusting to their needs and preferences.</td>
+                                        <td>This is a functional cookie required to ensure that the Fundraise Up service works
+                                            properly on your
+                                            site. This cookie collects and stores data that allows our platform to provide a
+                                            better and more
+                                            personalized donation experience for visitors. The information stored in this file
+                                            helps us optimize a
+                                            visitor's interaction with various elements on site, adjusting to their needs and
+                                            preferences.</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="shadow"></div>
+                    <div class="accordion__scroll-shadow"></div>
                 </div>
-                <div class="cookie__options">
-                    <div class="button button--cookie"><a href="#!"><p class="cookie__link">Reject All</p></a></div>
-                    <div class="button button--cookie"><a href="#!"><p class="cookie__link">Save My Preferences</p></a></div>
-                    <div class="button button--cookie button--cookie-alt"><a href="#!"><p class="cookie__link">Accept All</p></a></div>
+                <div class="cookies__options">
+                    <div class="button button--cookie">
+                        <a href="#!">
+                            <p class="cookies__link">Reject All</p>
+                        </a>
+                    </div>
+                    <div class="button button--cookie">
+                        <a href="#!">
+                            <p class="cookies__link">Save My Preferences</p>
+                        </a>
+                    </div>
+                    <div class="button button--cookie button--cookie-alt">
+                        <a href="#!">
+                            <p class="cookies__link">Accept All</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="cookie__foot">
+                <div class="cookies__foot">
                     <p>Powered by</p>
                     <img src="img/poweredbtcky.svg" alt="CookieYes">
                 </div>
@@ -355,37 +502,88 @@
         </div>
 
         <section class="hero">
-            <div class="sticky">
-                <h2 class="heading--big heading--bold heading--upper heading--white hero__heading center">We Protect Forests, Species, And Climate</h2>
-                <div class="button button--white right"><a href="#!"><div class="button__link row-flex"><p>Become A Partner</p><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/arrow.png" alt=""></div><div class="icon-box"><img src="img/arrow.png" alt=""></div></div></div></div></a></div>
+            <div class="hero__content">
+                <h2 class="heading--big heading--bold heading--upper heading--white hero__heading center">We Protect Forests,
+                    Species, And Climate</h2>
+                <div class="button button--white right">
+                    <a href="#!">
+                        <div class="button__link row-flex">
+                            <p>Become A Partner</p>
+                            <div class="icon-slide">
+                                <div class="row-flex icon-slide__container">
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/arrow.png" alt="">
+                                    </div>
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="popup absolute">
+            <div class="popup">
                 <div class="space-flex--popup space-flex">
                     <h3 class="sub--bigger heading--upper">Become a brand partner</h3>
-                    <label class="x"><input type="checkbox"><span class="button--x"><img src="img/x.png" srcset="img/x.png 1.4x" alt="exit"></span></label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="button--x">
+                            <img src="img/x.png" srcset="img/x.png 1.4x" alt="exit">
+                        </span>
+                    </label>
                 </div>
-                <p class="copy break">We work with over 1,000 brand, producer, and innovation partners to transform unsustainable supply chains and save forests. Join us.</p>
-                <div class="button button--black button--small"><a href="#!"><p class="small__link">Become A Brand Partner</p></a></div>
+                <p class="copy">We work with over 1,000 brand, producer, and innovation partners to transform
+                    unsustainable supply chains and save forests. Join us.</p>
+                <div class="button button--black button--small">
+                    <a href="#!">
+                        <p class="button--small__link">Become A Brand Partner</p>
+                    </a>
+                </div>
             </div>
         </section>
         
-        <a href="#!"><div class="cover"></div></a>
+        <a href="#!">
+            <div class="cover"></div>
+        </a>
+
         <div class="column-flex menu" id="menu">
             <div class="space-flex">
                 <h2 class="sub--big">Menu</h2>
                 <div class="row-flex">
-                    <div class="button button--white grow-only"><a href="#search" class="search center"><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/search.png" alt=""></div><div class="icon-box"><img src="img/search.png" alt=""></div></div></div><p>Search</p></a></div>
-                    <a href="#!" class="button--x"><img src="img/x.png" srcset="img/x.png 1.25x" alt="exit"></a>
+                    <div class="button button--white grow-only">
+                        <a href="#search" class="search center">
+                            <div class="icon-slide">
+                                <div class="row-flex icon-slide__container">
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/search.png" alt="">
+                                    </div>
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/search.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Search</p>
+                        </a>
+                    </div>
+                    <a href="#!" class="button--x">
+                        <img src="img/x.png" srcset="img/x.png 1.25x" alt="exit">
+                    </a>
                 </div>
             </div>
-            
-            <div class="button button--menu"><a href="#!"><p class="button__link heading--upper sub--big">Get involved</p></a></div>
-
-            <div class="menu-ac">
+            <div class="button button--menu">
+                <a href="#!">
+                    <p class="button__link heading--upper sub--big">Get involved</p>
+                </a>
+            </div>
+            <div class="accordion-toggle">
                 <div class="menu__accordion">
-                    <div class="space-flex"><h3 class="heading--upper sub--big link">About Us</h3><div class="plumin"></div></div>
+                    <div class="space-flex">
+                        <h3 class="heading--upper sub--big link">About Us</h3>
+                        <div class="plus-minus-toggle"></div>
+                    </div>
                     <div>
-                        <ul class="accordion__list copy--big">
+                        <ul class="menu__accordion-list copy--big">
                             <li><a class="link" href="#!">Our mission</a></li>
                             <li><a class="link" href="#!">Our Impact</a></li>
                             <li><a class="link" href="#!">Our People</a></li>
@@ -396,12 +594,14 @@
                     </div>
                 </div>
             </div>
-
-            <div class="menu-ac">
+            <div class="accordion-toggle">
                 <div class="menu__accordion">
-                    <div class="space-flex"><h3 class="heading--upper sub--big link">Let's Make Change Together</h3><div class="plumin"></div></div>
+                    <div class="space-flex">
+                        <h3 class="heading--upper sub--big link">Let's Make Change Together</h3>
+                        <div class="plus-minus-toggle"></div>
+                    </div>
                     <div>
-                        <ul class="accordion__list copy--big">
+                        <ul class="menu__accordion-list copy--big">
                             <li><a class="link" href="#!">How we make change</a></li>
                             <li><a class="link" href="#!">CanopyStyle</a></li>
                             <li><a class="link" href="#!">Pack4Good</a></li>
@@ -413,12 +613,14 @@
                     </div>
                 </div>
             </div>
-
-            <div class="menu-ac">
+            <div class="accordion-toggle">
                 <div class="menu__accordion">
-                    <div class="space-flex"><h3 class="heading--upper sub--big link">Next generation solutions</h3><div class="plumin"></div></div>
+                    <div class="space-flex">
+                        <h3 class="heading--upper sub--big link">Next generation solutions</h3>
+                        <div class="plus-minus-toggle"></div>
+                    </div>
                     <div>
-                        <ul class="accordion__list copy--big">
+                        <ul class="menu__accordion-list copy--big">
                             <li><a class="link" href="#!">Next Gen Solutions</a></li>
                             <li><a class="link" href="#!">Global Impact: Next Gen Map</a></li>
                             <li><a class="link" href="#!">The Way Forward</a></li>
@@ -427,32 +629,43 @@
                     </div>
                 </div>
             </div>
-
-            <div class="menu-ac">
+            <div class="accordion-toggle">
                 <div class="menu__accordion">
-                    <div class="space-flex"><h3 class="heading--upper sub--big link">How we protect forests</h3><div class="plumin"></div></div>
+                    <div class="space-flex">
+                        <h3 class="heading--upper sub--big link">How we protect forests</h3>
+                        <div class="plus-minus-toggle"></div>
+                    </div>
                     <div>
-                        <ul class="accordion__list copy--big">
+                        <ul class="menu__accordion-list copy--big">
                             <li><a class="link" href="#!">The forests we help protect</a>
                                 <ul>
-                                    <li><p>&#8618;</p><a class="link" href="#!">Costal Temperate Rainforests</a></li>
-                                    <li><p>&#8618;</p><a class="link" href="#!">Leuser Ecosystem</a></li>
-                                    <li><p>&#8618;</p><a class="link" href="#!">Boreal Forest</a></li>
-                                    <li><p>&#8618;</p><a class="link" href="#!">Great Bear Rainforest</a></li>
+                                    <li>
+                                        <p>&#8618;</p><a class="link" href="#!">Costal Temperate Rainforests</a>
+                                    </li>
+                                    <li>
+                                        <p>&#8618;</p><a class="link" href="#!">Leuser Ecosystem</a>
+                                    </li>
+                                    <li>
+                                        <p>&#8618;</p><a class="link" href="#!">Boreal Forest</a>
+                                    </li>
+                                    <li>
+                                        <p>&#8618;</p><a class="link" href="#!">Great Bear Rainforest</a>
+                                    </li>
                                 </ul>
                             </li>
-                            
                             <li><a class="link" href="#!">How we protect forets</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <div class="menu-ac">
+            <div class="accordion-toggle">
                 <div class="menu__accordion">
-                    <div class="space-flex"><h3 class="heading--upper sub--big link">Tools and Resources</h3><div class="plumin"></div></div>
+                    <div class="space-flex">
+                        <h3 class="heading--upper sub--big link">Tools and Resources</h3>
+                        <div class="plus-minus-toggle"></div>
+                    </div>
                     <div>
-                        <ul class="accordion__list copy--big">
+                        <ul class="menu__accordion-list copy--big">
                             <li><a class="link" href="#!">Hot Button Report</a></li>
                             <li><a class="link" href="#!">EcoPaper Database</a></li>
                             <li><a class="link" href="#!">Forest Mapper</a></li>
@@ -461,19 +674,17 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="menu__news">
                 <div class="space-flex">
                     <h3 class="sub heading--purple">Latest News</h3>
                     <a href="#article1" class="row-flex link">
                         <p>View all</p>
-                        <div class="icon-slider">
-                            <div class="row-flex slider-container">
-                                <div class="icon-box">
+                        <div class="icon-slide">
+                            <div class="row-flex icon-slide__container">
+                                <div class="icon-slide__constraint">
                                     <img src="img/arrow.png" alt="">
                                 </div>
-                                <div class="icon-box">
+                                <div class="icon-slide__constraint">
                                     <img src="img/arrow.png" alt="">
                                 </div>
                             </div>
@@ -484,76 +695,135 @@
                     <div class="article-list" data-slides>
                         <div class="slide s1" data-active>
                             <div class="row-flex">
-                                <div class="menu-news__grid">
-                                    <div class="thumbnail"><img src="img/news-1.avif" class="thumbnail-img" alt="article thumbnail"></div>
+                                <div class="slide__grid">
+                                    <div class="thumbnail">
+                                        <img src="img/news-1.avif" class="thumbnail__img" alt="article thumbnail">
+                                    </div>
                                 </div>
                                 <h4 class="copy--bigger">Yibin Grace Opens First Recycled Textile Pulp Facility in China</h4>
                             </div>
                         </div>
-                        
                         <div class="slide s2">
                             <div class="row-flex">
-                                <div class="menu-news__grid">
-                                    <div class="thumbnail"><img src="img/news-2.avif" class="thumbnail-img" alt="article thumbnail"></div>
+                                <div class="slide__grid">
+                                    <div class="thumbnail">
+                                        <img src="img/news-2.avif" class="thumbnail__img" alt="article thumbnail">
+                                    </div>
                                 </div>
                                 <h4 class="copy--bigger">Canopy at Lamke: Five Key Takeaways from our Panel Discussion</h4>
                             </div>
                         </div>
-                            
                         <div class="slide s3">
                             <div class="row-flex">
-                                <div class="menu-news__grid">
-                                    <div class="thumbnail"><img src="img/news-4.avif" class="thumbnail-img" alt="article thumbnail"></div>
+                                <div class="slide__grid">
+                                    <div class="thumbnail">
+                                        <img src="img/news-4.avif" class="thumbnail__img" alt="article thumbnail">
+                                    </div>
                                 </div>
                                 <h4 class="copy--bigger">Bailu Group Comissions Pilot Facility for recycled textile fiber</h4>
                             </div>
                         </div>
-        
                         <div class="slide s4">
                             <div class="row-flex">
-                                <div class="menu-news__grid">
-                                    <div class="thumbnail"><img src="img/news-5.avif" class="thumbnail-img" alt="article thumbnail"></div>
+                                <div class="slide__grid">
+                                    <div class="thumbnail">
+                                        <img src="img/news-5.avif" class="thumbnail__img" alt="article thumbnail">
+                                    </div>
                                 </div>
                                 <h4 class="copy--bigger">Bamboo Position Paper</h4>
                             </div>
                         </div>
-        
                         <div class="slide s5">
                             <div class="row-flex">
-                                <div class="menu-news__grid">
-                                    <div class="thumbnail"><img src="img/news-5.avif" class="thumbnail-img" alt="article thumbnail"></div>
+                                <div class="slide__grid">
+                                    <div class="thumbnail">
+                                        <img src="img/news-5.avif" class="thumbnail__img" alt="article thumbnail">
+                                    </div>
                                 </div>
                                 <h4 class="copy--bigger">Bamboo Position Paper</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="placeholder moveup">
+                    <div class="placeholder">
                         <div class="row-flex">
-                            <div class="menu-news__grid">
-                                <div class="thumbnail"><img src="img/news-5.avif" class="thumbnail-img" alt="article thumbnail"></div>
+                            <div class="slide__grid">
+                                <div class="thumbnail">
+                                    <img src="img/news-5.avif" class="thumbnail__img" alt="article thumbnail">
+                                </div>
                             </div>
                             <h4 class="copy--bigger">Bamboo Position Paper</h4>
                         </div>
                     </div>
-                    <div class="space-flex moveup">
-                        <div><p class="sub thin"><span class="sub--bigger page-number"></span>/5</p></div>
+                    <div class="space-flex">
+                        <div>
+                            <p class="sub thin"><span class="sub--bigger page-number"></span>/5</p>
+                        </div>
                         <div class="row-flex">
-                            <div class="button button--white lrbutton"><div data-carousel-button="prev" class="lr l"><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/arrow.png" alt=""></div><div class="icon-box"><img src="img/arrow.png" alt=""></div></div></div></div></div>
-                            <div class="button button--white lrbutton"><div data-carousel-button="next" class="lr r"><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/arrow.png" alt=""></div><div class="icon-box"><img src="img/arrow.png" alt=""></div></div></div></div></div>
+                            <div class="button button--white lrbutton">
+                                <div data-carousel-button="prev" class="lr l">
+                                    <div class="icon-slide">
+                                        <div class="row-flex icon-slide__container">
+                                            <div class="icon-slide__constraint">
+                                                <img src="img/arrow.png" alt="">
+                                            </div>
+                                            <div class="icon-slide__constraint">
+                                                <img src="img/arrow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button button--white lrbutton">
+                                <div data-carousel-button="next" class="lr r">
+                                    <div class="icon-slide">
+                                        <div class="row-flex icon-slide__container">
+                                            <div class="icon-slide__constraint">
+                                                <img src="img/arrow.png" alt="">
+                                            </div>
+                                            <div class="icon-slide__constraint">
+                                                <img src="img/arrow.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="column-flex socials">
+            <div class="column-flex menu__social-media">
                 <p>Follow us</p>
                 <div class="space-flex">
-                    <div><a href="#!"><img src="img/linkedin.png" srcset="img/linkedin.png 1.25x" alt="linkedin"></a></div>
-                    <div><a href="#!"><img src="img/instagram.png" srcset="img/instagram.png 1.25x" alt="instagram"></a></div>
-                    <div><a href="#!"><img src="img/facebook.png" srcset="img/facebook.png 1.25x" alt="facebook"></a></div>
-                    <div><a href="#!"><img src="img/twitter.png" srcset="img/twitter.png 1.25x" alt="twitter"></a></div>
-                    <div><a href="#!"><img src="img/youtube.png" srcset="img/youtube.png 1.25x" alt="youtube"></a></div>
-                    <div><a href="#!"><img src="img/vine.png" srcset="img/vine.png 1.25x" alt="vimeo"></a></div>
+                    <div>
+                        <a href="#!">
+                            <img src="img/linkedin.png" srcset="img/linkedin.png 1.25x" alt="linkedin">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="img/instagram.png" srcset="img/instagram.png 1.25x" alt="instagram">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="img/facebook.png" srcset="img/facebook.png 1.25x" alt="facebook">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="img/twitter.png" srcset="img/twitter.png 1.25x" alt="twitter">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="img/youtube.png" srcset="img/youtube.png 1.25x" alt="youtube">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="img/vine.png" srcset="img/vine.png 1.25x" alt="vimeo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -561,21 +831,29 @@
         <div id="search" class="search-tab column-flex menu">
             <div class="space-flex">
                 <h2 class="sub--big">Search</h2>
-                <a href="#!" class="button--x"><img src="img/x.png" srcset="img/x.png 1.25x" alt="exit"></a>
+                <a href="#!" class="button--x">
+                    <img src="img/x.png" srcset="img/x.png 1.25x" alt="exit">
+                </a>
             </div>
-    
             <div class="menu__accordion">
-                <div class="icon"><img src="img/search.png" alt=""></div>
+                <div class="icon">
+                    <img src="img/search.png" alt="">
+                </div>
                 <input type="text">
-                <div class="result-count row-flex"><p>12 results</p><div class="icon round"><img src="img/x.png" alt=""></div></div>
+                <div class="search-tab__result-count row-flex">
+                    <p>12 results</p>
+                    <div class="icon round">
+                        <img src="img/x.png" alt="">
+                    </div>
+                </div>
                 <div class="button button--black lrbutton">
                     <div class="lr">
-                        <div class="icon-slider">
-                            <div class="row-flex slider-container">
-                                <div class="icon-box">
+                        <div class="icon-slide">
+                            <div class="row-flex icon-slide__container">
+                                <div class="icon-slide__constraint">
                                     <img src="img/arrow.png" alt="">
                                 </div>
-                                <div class="icon-box">
+                                <div class="icon-slide__constraint">
                                     <img src="img/arrow.png" alt="">
                                 </div>
                             </div>
@@ -583,7 +861,6 @@
                     </div>
                 </div>
             </div>
-    
             <ul class="search-tab__results">
                 <li>Search result 1</li>
                 <li>Search result 2</li>
@@ -603,8 +880,11 @@
         <main>
             <div class="section">
                 <section class="mission">
-                    <h2 class="heading--serif heading--big">We are in the business of <span class="heading--purple">saving the planet</span></h2>
-                    <p class="copy--big">We work collaboratively with brands, producers, local NGOs, Indigenous leaders, and decision-makers. Our approach brings the power of the global market to secure large-scale, and just conservation for the world’s climate-critical and biodiversity-rich forests.</p>
+                    <h2 class="heading--serif heading--big">We are in the business of <span class="heading--purple">saving the
+                        planet</span></h2>
+                    <p class="copy--big">We work collaboratively with brands, producers, local NGOs, Indigenous leaders, and
+                        decision-makers. Our approach brings the power of the global market to secure large-scale, and just
+                        conservation for the world’s climate-critical and biodiversity-rich forests.</p>
                 </section>
             </div>
             
@@ -612,144 +892,233 @@
                 <section class="news">
                     <div class="space-flex">
                         <h2 class="heading--no-big section-heading heading--upper">In the News</h2>
-                        <a class="row-flex center donate__link shrink"><p class="copy--smaller heading--bold">View all News</p><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/arrow.png" alt=""></div><div class="icon-box"><img src="img/arrow.png" alt=""></div></div></div></a>
+                        <a class="row-flex center underline-link shrink">
+                            <p class="copy--smaller heading--bold">View all News</p>
+                            <div class="icon-slide">
+                                <div class="row-flex icon-slide__container">
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/arrow.png" alt="">
+                                    </div>
+                                    <div class="icon-slide__constraint">
+                                        <img src="img/arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="row-flex bump">
+                    <div class="row-flex news__grid">
                         <article class="news__article">
                             <a href="#!" class="column-flex">
-                                <div class="news-thumbnail"><img class="placeholder" src="img/newsbig1.avif" alt=""><img class="news-thumbnail-img" src="img/newsbig1.avif" alt="article thumbnail"><div class="row-flex article__icon"><img src="img/article.png" alt="article icon"><p class="heading--upper copy--smaller">Article</p></div></div>
+                                <div class="news__thumbnail">
+                                    <img class="placeholder" src="img/newsbig1.avif" alt="">
+                                    <img class="news__thumbnail-img" src="img/newsbig1.avif" alt="article thumbnail">
+                                    <div class="row-flex article__icon">
+                                        <img src="img/article.png" alt="article icon">
+                                        <p class="heading--upper copy--smaller">Article</p>
+                                    </div>
+                                </div>
                                 <p class="copy--smaller">April 7, 2025</p>
-                                <h3 class="sub--bigger article__copy">Yibin Grace Opens First Recycled Textile Pulp Facility in China</h3>
+                                <h3 class="sub--bigger article__copy">Yibin Grace Opens First Recycled Textile Pulp Facility in
+                                    China</h3>
                             </a>
                         </article>
                         <article class="news__article">
                             <a href="#!" class="column-flex">
-                                <div class="news-thumbnail"><img class="placeholder" src="img/newsbig2.avif" alt=""><img class="news-thumbnail-img" src="img/newsbig2.avif" alt="article thumbnail"><div class="row-flex article__icon"><img src="img/article.png" alt="article icon"><p class="heading--upper copy--smaller">Article</p></div></div>
+                                <div class="news__thumbnail">
+                                    <img class="placeholder" src="img/newsbig2.avif" alt="">
+                                    <img class="news__thumbnail-img" src="img/newsbig2.avif" alt="article thumbnail">
+                                    <div class="row-flex article__icon">
+                                        <img src="img/article.png" alt="article icon">
+                                        <p class="heading--upper copy--smaller">Article</p>
+                                    </div>
+                                </div>
                                 <p class="copy--smaller">Mar 28, 2025</p>
                                 <h3 class="sub--bigger article__copy">Canopy x Lakmé Fashion Week</h3>
                             </a>
                         </article>
                         <article class="news__article">
                             <a href="#!" class="column-flex">
-                                <div class="news-thumbnail"><img class="placeholder" src="img/newsbig3.avif" alt=""><img class="news-thumbnail-img" src="img/newsbig3.avif" alt="article thumbnail"><div class="row-flex article__icon"><img src="img/article.png" alt="article icon"><p class="heading--upper copy--smaller">Article</p></div></div>
+                                <div class="news__thumbnail">
+                                    <img class="placeholder" src="img/newsbig3.avif" alt="">
+                                    <img  class="news__thumbnail-img" src="img/newsbig3.avif" alt="article thumbnail">
+                                    <div class="row-flex article__icon">
+                                        <img src="img/article.png" alt="article icon">
+                                        <p class="heading--upper copy--smaller">Article</p>
+                                    </div>
+                                </div>
                                 <p class="copy--smaller">Feb 24, 2025</p>
-                                <h3 class="sub--bigger article__copy">Canopy Launches New Upgrade of the World’s Largest EcoPaper Database</h3>
+                                <h3 class="sub--bigger article__copy">Canopy Launches New Upgrade of the World’s Largest EcoPaper
+                                    Database</h3>
                             </a>
                         </article>
                     </div>
-                    <a class="row-flex center donate__link grow"><p class="heading--no-big heading--bold">View all News</p><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/arrow.png" alt=""></div><div class="icon-box"><img src="img/arrow.png" alt=""></div></div></div></a>
+                    <a class="row-flex center underline-link grow">
+                        <p class="heading--no-big heading--bold">View all News</p>
+                        <div class="icon-slide">
+                            <div class="row-flex icon-slide__container">
+                                <div class="icon-slide__constraint">
+                                    <img src="img/arrow.png" alt="">
+                                </div>
+                                <div class="icon-slide__constraint">
+                                    <img src="img/arrow.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </section>
             </div>
         
             <div class="section">
-                <section class="section-grid">
-                    <div class="section-thumbnail"><img src="img/defo.gif" class="thumbnail-img" srcset="img/defo.gif 1.25x" alt="deforestation visual"></div>
-                    <div class="section-content column-flex">
+                <section class="section__grid problem">
+                    <div class="section__thumbnail">
+                        <img src="img/defo.gif" class="thumbnail__img" srcset="img/defo.gif 1.25x" alt="deforestation visual">
+                    </div>
+                    <div class="section__content column-flex">
                         <h2 class="heading--purple heading--bigger">5.1B</h2>
-                        <p class="copy--big"> Despite the importance of forests, every year, a staggering 5.1 billion trees are cut down, many from vital landscapes, to meet the demand for paper and paper packaging, and for fabrics like rayon and viscose.</p>
-                        <div class="button"><a href="#!"><p class="button__link">Learn more</p></a></div>
+                        <p class="copy--big"> Despite the importance of forests, every year, a staggering 5.1 billion trees are cut
+                            down, many from vital landscapes, to meet the demand for paper and paper packaging, and for fabrics like
+                            rayon and viscose.</p>
+                        <div class="button">
+                            <a href="#!">
+                                <p class="button__link">Learn more</p>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
             
             <div class="section">
                 <h2 class="heading--upper section-heading heading--no-big">our Impact Initiatives</h2>
-                <div class="column-flex init">
-                    <section class="initiatives">
-                        <div class="section-grid subections">
-                            <h3 class="subsection-1 heading--upper heading--inits">Canopy<span class="heading--purple">Style</span></h3>
-                            <div class="subsection-img">
-                                <div class="skew-frame shrink">
-                                    <img src="img/init1.avif" alt="CanopyStyle thumbnail">
-                                </div>
-                                <div class="grow">
-                                    <img src="img/initwide-1.avif" alt="CanopyStyle thumbnial">
-                                </div>
+                <section class="column-flex initiatives">
+                    <div class="section__grid">
+                        <h3 class="initiatives__sub-1 heading--upper heading--initiatives">Canopy<span class="heading--purple">Style</span></h3>
+                        <div class="initiatives__sub-img">
+                            <div class="initiatives__img-frame shrink">
+                                <img src="img/init1.avif" alt="CanopyStyle thumbnail">
                             </div>
-                            <div class="subsection-3 column-flex">
-                                <p class="copy--small">CanopyStyle brings together fashion’s most progressive players and industry giants to ensure we keep the world's most vital forests out of fabrics like rayon and viscose so that we can be fashionable, and keep the planet looking — and feeling — good too.</p>
-                            <div class="button"><a href="#!"><p class="button__link">Read more</p></a></div>
-                            </div>
-                            <h3 class="subsection-1 heading--upper heading--inits">Pack4<span class="heading--purple">Good</span></h3>
-                            <div class="subsection-img">
-                                <div class="skew-frame shrink">
-                                    <img src="img/init-2.avif" alt="Pack4Good thumbnail">
-                                </div>
-                                <div class="grow">
-                                    <img src="img/initwide2.avif" alt="Pack4Good thumbnial">
-                                </div>
-                            </div>
-                            <div class="subsection-3 column-flex">
-                                <p class="copy--small">The Pack4Good initiative invites industry leaders to think outside the box and implement real solutions to reduce waste, address risk, and ensure the world’s Ancient and Endangered Forests aren’t cut down to package your next delivery.</p>
-                            <div class="button"><a href="#!"><p class="button__link">Read more</p></a></div>
-                            </div>
-                            <h3 class="subsection-1 heading--upper heading--inits">Next <span class="heading--purple">Gen</span></h3>
-                            <div class="subsection-img third">
-                                <div class="skew-frame shrink">
-                                    <img src="img/init-3.avif" alt="NextGen thumbnail">
-                                </div>
-                                <div class="grow">
-                                    <img src="img/initwide-3.avif" alt="NextGen thumbnial">
-                                </div>
-                            </div>
-                            <div class="subsection-3 column-flex">
-                                <p class="copy--small">Next Gen Solutions use by-products of other processes instead of forests to make paper, paper packaging, and textiles. With the help of our brand, producer, and innovation partners, we are looking to galvanize over 60,000,000 tonnes of Next Gen alternatives by 2033 to reduce pressure on forests and make way for locally driven conservation initiatives.</p>
-                            <div class="button"><a href="#!"><p class="button__link">Read more</p></a></div>
+                            <div class="grow">
+                                <img src="img/initwide-1.avif" alt="CanopyStyle thumbnial">
                             </div>
                         </div>
-                    </section>
-                </div>
+                        <div class="initiatives__sub-3 column-flex">
+                            <p class="copy--small">CanopyStyle brings together fashion’s most progressive players and industry
+                                giants to ensure we keep the world's most vital forests out of fabrics like rayon and viscose so
+                                that we can be fashionable, and keep the planet looking — and feeling — good too.</p>
+                            <div class="button">
+                                <a href="#!">
+                                    <p class="button__link">Read more</p>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="initiatives__sub-1 heading--upper heading--initiatives">Pack4<span class="heading--purple">Good</span>
+                        </h3>
+                        <div class="initiatives__sub-img">
+                            <div class="initiatives__img-frame shrink">
+                                <img src="img/init-2.avif" alt="Pack4Good thumbnail">
+                            </div>
+                            <div class="grow">
+                                <img src="img/initwide2.avif" alt="Pack4Good thumbnail">
+                            </div>
+                        </div>
+                        <div class="initiatives__sub-3 column-flex">
+                            <p class="copy--small">The Pack4Good initiative invites industry leaders to think outside the box
+                                and implement real solutions to reduce waste, address risk, and ensure the world’s Ancient and
+                                Endangered Forests aren’t cut down to package your next delivery.</p>
+                            <div class="button">
+                                <a href="#!">
+                                    <p class="button__link">Read more</p>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="initiatives__sub-1 heading--upper heading--initiatives">Next <span class="heading--purple">Gen</span>
+                        </h3>
+                        <div class="initiatives__sub-img third">
+                            <div class="initiatives__img-frame shrink">
+                                <img src="img/init-3.avif" alt="NextGen thumbnail">
+                            </div>
+                            <div class="grow">
+                                <img src="img/initwide-3.avif" alt="NextGen thumbnial">
+                            </div>
+                        </div>
+                        <div class="initiatives__sub-3 column-flex">
+                            <p class="copy--small">Next Gen Solutions use by-products of other processes instead of forests to
+                                make paper, paper packaging, and textiles. With the help of our brand, producer, and innovation
+                                partners, we are looking to galvanize over 60,000,000 tonnes of Next Gen alternatives by 2033 to
+                                reduce pressure on forests and make way for locally driven conservation initiatives.</p>
+                            <div class="button">
+                                <a href="#!">
+                                    <p class="button__link">Read more</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             
             <div class="section">
                 <section class="partners column-flex">
                     <h2 class="section-heading heading--upper heading--no-big">Existing Brand Partners</h2>
-                    <h3 class="heading--upper heading--inits heading--bold">950&plus; are already in!</h3>
-                    <ul class="brands">
-                        <li class="brand"><img src="img/brand1.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand2.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand3.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand4.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand5.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand6.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand7.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand8.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand9.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand10.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand11.png" alt="brand logo"></li>
-                        <li class="brand"><img src="img/brand12.png" alt="brand logo"></li>
+                    <h3 class="heading--upper heading--initiatives heading--bold">950&plus; are already in!</h3>
+                    <ul class="partners__brands">
+                        <li class="partners__brand"><img src="img/brand1.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand2.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand3.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand4.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand5.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand6.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand7.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand8.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand9.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand10.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand11.png" alt="brand logo"></li>
+                        <li class="partners__brand"><img src="img/brand12.png" alt="brand logo"></li>
                     </ul>
-                    <div class="button button--white"><a href="#!"><p class="button__link">View All Our Partners</p></a></div>
+                    <div class="button button--white">
+                        <a href="#!">
+                            <p class="button__link">View All Our Partners</p>
+                        </a>
+                    </div>
                 </section>
             </div>
         
             <div class="section">
-                <div class="quote-section">
-                    <div class="quote-grid">
-                        <div class="quoted">
-                            <p class="quoted__name copy--bigger"><span class="grow-only">- </span>Marija Rompani</p>
+                <div class="quote">
+                    <div class="quote__grid">
+                        <div class="quote__quoted">
+                            <p class="quote__name copy--bigger"><span class="grow-only">- </span>Marija Rompani</p>
                             <div>
-                                <p class="quoted__creds">Director of Sustainability &amp; Ethics</p>
-                                <p class="quoted__creds">John Lewis Partnership</p>
+                                <p class="quote__creds">Director of Sustainability &amp; Ethics</p>
+                                <p class="quote__creds">John Lewis Partnership</p>
                             </div>
                         </div>
-                        <div class="quote">
-                            <p class="quote--feat"><span class="feat-icon"><img alt="" src="img/quote.png"></span>I’m excited that John Lewis is building on our existing work with Canopy, by now also supporting the Pack4Good initiative.</p>
-                            <p class="copy">We’re committed to protecting and restoring nature, and we constantly strive to reduce and improve our packaging. Signing up to the Pack4Good initiative is a truly positive step forward on our journey to ensuring all our paper-based packaging is from a more sustainable source.</p>
+                        <div class="quote__quote">
+                            <p class="quote__quote--feat"><span class="feat-icon"><img alt="" src="img/quote.png"></span>I’m excited that
+                                John Lewis is building on our existing work with Canopy, by now also supporting the Pack4Good
+                                initiative.</p>
+                            <p class="copy">We’re committed to protecting and restoring nature, and we constantly strive to reduce
+                                and improve our packaging. Signing up to the Pack4Good initiative is a truly positive step forward
+                                on our journey to ensuring all our paper-based packaging is from a more sustainable source.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="section">
-                <section class="section-grid">
-                    <div class="section-thumbnail solution"><img src="img/solution.png" class="thumbnail-img" srcset="img/solution.png 1.25x" alt="deforestation visual"></div>
-                    <div class="section-content column-flex">
+                <section class="section__grid">
+                    <div class="section__thumbnail solution">
+                        <img src="img/solution.png" class="thumbnail__img" srcset="img/solution.png 1.25x" alt="deforestation visual">
+                    </div>
+                    <div class="section__content column-flex">
                         <h2 class="heading--big">Be part of <span class="heading--purple">the solution</span></h2>
                         <p class="copy--big">
-                            The solutions we propose are big, bold, and innovative, and we seek partners who are equally motivated to use their influence to bring about the holistic and lasting change our world needs.
+                            The solutions we propose are big, bold, and innovative, and we seek partners who are equally motivated
+                            to use their influence to bring about the holistic and lasting change our world needs.
                         </p>
-                        <div class="button"><a href="#!"><p class="button__link">become a partner</p></a></div>
+                        <div class="button">
+                            <a href="#!">
+                                <p class="button__link">become a partner</p>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -762,38 +1131,38 @@
                     <ul class="impact__nav sub--bigger">
                         <li>
                             <a href="#!" class="row-flex impact__link">
-                                <div class="bubble">
-                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="bubble__plus">
+                                <div class="impact__bubble">
+                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="impact__bubble-plus">
                                 </div>
                                 <p>The Boreal Forest</p>
-                                <img class="hover" src="img/hover1.png" srcset="img/hover1.png 1.4x" alt="">
+                                <img class="impact__img" src="img/hover1.png" srcset="img/hover1.png 1.4x" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#!" class="row-flex impact__link">
-                                <div class="bubble">
-                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="bubble__plus">
+                                <div class="impact__bubble">
+                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="impact__bubble-plus">
                                 </div>
                                 <p>The Great Bear Rainforest</p>
-                                <img class="hover" src="img/hover2.png" srcset="img/hover2.png 1.4x" alt="">
+                                <img class="impact__img" src="img/hover2.png" srcset="img/hover2.png 1.4x" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#!" class="row-flex impact__link">
-                                <div class="bubble">
-                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="bubble__plus">
+                                <div class="impact__bubble">
+                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="impact__bubble-plus">
                                 </div>
                                 <p>The Leuser Ecosystem</p>
-                                <img class="hover" src="img/hover3.png" srcset="img/hover3.png 1.4x" alt="">
+                                <img class="impact__img" src="img/hover3.png" srcset="img/hover3.png 1.4x" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#!" class="row-flex impact__link">
-                                <div class="bubble">
-                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="bubble__plus">
+                                <div class="impact__bubble">
+                                    <img src="img/plus.png" srcset="img/plus.png 1.4x" alt="" class="impact__bubble-plus">
                                 </div>
-                               <p>Costal Temperate Rainforests</p>
-                                <img class="hover" src="img/hover4.png" srcset="img/hover4.png 1.4x" alt="">
+                                <p>Costal Temperate Rainforests</p>
+                                <img class="impact__img" src="img/hover4.png" srcset="img/hover4.png 1.4x" alt="">
                             </a>
                         </li>
                     </ul>
@@ -802,27 +1171,42 @@
             
             <div class="section">
                 <div class="pre-foot">
-                    <div class="section-grid bump">
-                        <article class="news__article">
+                    <div class="row-flex news__grid">
+                        <article class="pre-foot__article">
                             <a href="#!" class="column-flex">
                                 <div class="article__square">
-                                    <div class="pre-thumbnail"><img class="placeholder" src="img/prefoot1.avif" alt=""><div class="border-rad"><img class="pre-thumbnail-img" src="img/prefoot1.avif" alt="thumbnail"></div></div>
+                                    <div class="pre-foot__thumbnail">
+                                        <img class="placeholder" src="img/prefoot1.avif" alt="">
+                                        <div class="border-rad">
+                                            <img class="pre-foot__thumbnail-img" src="img/prefoot1.avif" alt="thumbnail">
+                                        </div>
+                                    </div>
                                 </div>
                                 <h3 class="sub--bigger article__copy">Become a brand Champion</h3>
                             </a>
                         </article>
-                        <article class="news__article">
+                        <article class="pre-foot__article">
                             <a href="#!" class="column-flex">
                                 <div class="article__square">
-                                    <div class="pre-thumbnail"><img class="placeholder" src="img/prefoot2.avif" alt=""><div class="border-rad"><img class="pre-thumbnail-img" src="img/prefoot2.avif" alt="thumbnail"></div></div>
+                                    <div class="pre-foot__thumbnail">
+                                        <img class="placeholder" src="img/prefoot2.avif" alt="">
+                                        <div class="border-rad">
+                                            <img class="pre-foot__thumbnail-img" src="img/prefoot2.avif" alt="thumbnail">
+                                        </div>
+                                    </div>
                                 </div>
                                 <h3 class="sub--bigger article__copy">The 2023 hot button report</h3>
                             </a>
                         </article>
-                        <article class="news__article">
+                        <article class="pre-foot__article">
                             <a href="#!" class="column-flex">
                                 <div class="article__square">
-                                    <div class="pre-thumbnail"><img class="placeholder" src="img/prefoot3.avif" alt=""><div class="border-rad"><img class="pre-thumbnail-img" src="img/prefoot3.avif" alt="thumbnail"></div></div>
+                                    <div class="pre-foot__thumbnail">
+                                        <img class="placeholder" src="img/prefoot3.avif" alt="">
+                                        <div class="border-rad">
+                                            <img class="pre-foot__thumbnail-img" src="img/prefoot3.avif" alt="thumbnail">
+                                        </div>
+                                    </div>
                                 </div>
                                 <h3 class="sub--bigger article__copy">Join our team</h3>
                             </a>
@@ -833,8 +1217,22 @@
             
             <div class="section">
                 <section class="donate column-flex center">
-                    <div class="donate__bubble row-flex center"><h3 class="donate__heading heading--white heading--upper">Donate outside of canada</h3></div>
-                    <a class="row-flex center donate__link"><p class="copy--smaller heading--bold">Donate Within Canada</p><div class="icon-slider"><div class="row-flex slider-container"><div class="icon-box"><img src="img/link.png" alt=""></div><div class="icon-box"><img src="img/link.png" alt=""></div></div></div></a>
+                    <div class="donate__bubble row-flex center">
+                        <h3 class="donate__heading heading--white heading--upper">Donate outside of canada</h3>
+                    </div>
+                    <a class="row-flex center underline-link">
+                        <p class="copy--smaller heading--bold">Donate Within Canada</p>
+                        <div class="icon-slide">
+                            <div class="row-flex icon-slide__container">
+                                <div class="icon-slide__constraint">
+                                    <img src="img/link.png" alt="">
+                                </div>
+                                <div class="icon-slide__constraint">
+                                    <img src="img/link.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </section>
             </div>
             
@@ -844,18 +1242,20 @@
                     <div class="newsletter__box">
                         <div class="newsletter__intro newsletter__item column-flex">
                             <h3 class="heading--big heading--upper">Stay updated</h3>
-                            <p class="copy--big">Learn about how we work to conserve the world’s forests and stabilize our climate. Sign up to receive news, important updates about our work, and ways you can take action.</p>
+                            <p class="copy--big">Learn about how we work to conserve the world’s forests and stabilize our climate.
+                                Sign up to receive news, important updates about our work, and ways you can take action.</p>
                         </div>
                         <div class="newsletter__form newsletter__item column-flex">
                             <div class="text-input">
-                                <p class="label copy--big">Full name</p>
+                                <p class="newsletter__label copy--big">Full name</p>
                                 <input class="newsletter__input copy--big" type="text" name="fullname">
                             </div>
                             <div class="text-input">
-                                <p class="label copy--big">Email</p>
+                                <p class="newsletter__label copy--big">Email</p>
                                 <input class="newsletter__input copy--big" type="text" name="email">
                             </div>
-                            <p class="check-wrapper row-flex"><input class="check" type="checkbox" name="emailme[]" value="emailme"> Yes, please send me updates via Email!</p>
+                            <p class="check-wrapper row-flex"><input class="check" type="checkbox" name="emailme[]" value="emailme">
+                                Yes, please send me updates via Email!</p>
                             <input class="button button--white button__link" type="submit" value="Sign Up">
                         </div>
                     </div>
@@ -865,11 +1265,33 @@
             <div class="section">
                 <section class="cta column-flex">
                     <h3>Get involved</h3>
-                    <div class="cta__link-box"><a href="#!" class="cta__link heading--upper heading--big">donate</a><div class="behind-box"><img class="behind" src="img/behind1.svg" alt=""></div></div>
-                    <div class="cta__link-box"><a href="#!" class="cta__link heading--upper heading--big">become a partner</a><div class="behind-box"><img class="behind" src="img/behind2.svg" alt=""></div></div>
-                    <div class="cta__link-box"><a href="#!" class="cta__link heading--upper heading--big">contact us</a><div class="behind-box"><img class="behind" src="img/behind3.svg" alt=""></div></div>
-                    <div class="cta__link-box"><a href="#!" class="cta__link heading--upper heading--big">join the team</a><div class="behind-box"><img class="behind" src="img/behind4.svg" alt=""></div></div>
-                    <div class="behind-box"><img class="behind" src="img/behind.svg" alt=""></div>
+                    <div class="cta__link-box">
+                        <a href="#!" class="cta__link heading--upper heading--big">donate</a>
+                        <div class="cta__behind-box">
+                            <img class="cta__behind" src="img/behind1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cta__link-box">
+                        <a href="#!" class="cta__link heading--upper heading--big">become a partner</a>
+                        <div class="cta__behind-box">
+                            <img class="cta__behind" src="img/behind2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cta__link-box">
+                        <a href="#!" class="cta__link heading--upper heading--big">contact us</a>
+                        <div class="cta__behind-box">
+                            <img class="cta__behind" src="img/behind3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cta__link-box">
+                        <a href="#!" class="cta__link heading--upper heading--big">join the team</a>
+                        <div class="cta__behind-box">
+                            <img class="cta__behind" src="img/behind4.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cta__behind-box">
+                        <img class="cta__behind" src="img/behind.svg" alt="">
+                    </div>
                 </section>
             </div>
         </main>
@@ -887,16 +1309,15 @@
                     </ul>
                 </div>
                 <div class="footer__row">
-                    <p class="link copy--small"><a href="#!">Privacy policy</a></p>
+                    <p class="link copy--small">
+                        <a href="#!">Privacy policy</a>
+                    </p>
                 </div>
             </nav>
         </footer>
             
-            
-            
-
         <script>
-            var acc = document.getElementsByClassName("menu-ac");
+            var acc = document.getElementsByClassName("accordion-toggle");
             var i;
             
             for (i = 0; i < acc.length; i++) {
@@ -905,6 +1326,7 @@
             });
             }
         </script>
+
         <script>
             const buttons = document.querySelectorAll("[data-carousel-button]")
 
