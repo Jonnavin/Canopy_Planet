@@ -913,8 +913,9 @@ div:has(input:focus) + .search-tab__results {
   margin: 3rem auto;
 }
 .mission p {
-  width: clamp(434px, 58.47vw, 100%);
+  width: clamp(400px, 58.47vw, 873px);
   margin: auto;
+  line-height: 1.1em;
 }
 /*PRE FOOTER*/
 .article__square {
