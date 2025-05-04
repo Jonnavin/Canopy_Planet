@@ -70,6 +70,7 @@ img {
 
 .display {
   max-height: 3rem;
+  position: static;
 }
 
 .accordion-toggle:has(.molecule) {
