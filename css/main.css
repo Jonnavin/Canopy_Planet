@@ -60,6 +60,7 @@ body {
   font-family: var(--font-sans-serif);
   color: var(--black);
   max-width: 100vw;
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
