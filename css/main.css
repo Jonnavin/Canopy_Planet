@@ -1723,5 +1723,5 @@ main .section:has(.pre-foot) {
   padding: 0;
 }
 .icon-box {
-  left: 0;
+  left: -75%;
 }
