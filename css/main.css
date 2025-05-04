@@ -1149,9 +1149,9 @@ a:hover + .behind-box {
 }*/
 .slider-container {
   height: 100%;
-  aspect-ratio: 3/1;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50%;
 }
 .icon-box {
   display: grid;
@@ -1166,7 +1166,7 @@ a:hover + .behind-box {
   width: 100%;
 }
 a:hover .icon-box {
-  left: -66.66666%;
+  left: -200%;
 }
 .donate__bubble {
   border-radius: 50%;
