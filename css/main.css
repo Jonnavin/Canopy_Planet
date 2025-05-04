@@ -823,7 +823,6 @@ div:has(input:focus) + .search-tab__results {
   width: 100%;
   clip-path: polygon(0% -7%, 100% -23%, 100% 107%, 0% 123%);
   grid-column: 5/span 4;
-  padding-bottom: 5rem;
 }
 .initiatives {
   max-height: fit-content;
