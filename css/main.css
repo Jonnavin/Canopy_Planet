@@ -18,7 +18,6 @@ html {
   font-size: 15px;
   background: var(--white);
   margin: 0;
-  overflow-x: hidden;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -175,6 +174,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .button .icon-slider {
   height: 100%;
+  aspect-ratio: 1/1;
 }
 .button__link {
   padding: 21px;
@@ -913,7 +913,7 @@ div:has(input:focus) + .search-tab__results {
   margin: 3rem auto;
 }
 .mission p {
-  width: clamp(434px, 58.47vw, 890px);
+  width: clamp(434px, 58.47vw, 100%);
   margin: auto;
 }
 /*PRE FOOTER*/
@@ -1139,13 +1139,19 @@ a:hover + .behind-box {
 .icon-slider {
   aspect-ratio: 1/1;
   width: 1rem;
-  clip-path: fill-box;
   display: grid;
   align-items: center;
+  clip-path: fill-box;
 }
-.slider-container {
+/*.slider-container {
   height: 100%;
   gap: 50%;
+}*/
+.slider-container {
+  height: 100%;
+  aspect-ratio: 3/1;
+  display: flex;
+  justify-content: space-between;
 }
 .icon-box {
   display: grid;
@@ -1153,14 +1159,14 @@ a:hover + .behind-box {
   aspect-ratio: 1/1;
   height: 100%;
   position: relative;
-  left: -100%;
+  left: 0;
   transition: all ease-in-out .3s;
 }
 .icon-slider img {
   width: 100%;
 }
 a:hover .icon-box {
-  left: 0;
+  left: -66.66666%;
 }
 .donate__bubble {
   border-radius: 50%;
