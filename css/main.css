@@ -822,6 +822,7 @@ div:has(input:focus) + .search-tab__results {
   width: 100%;
   clip-path: polygon(0% -7%, 100% -23%, 100% 107%, 0% 123%);
   grid-column: 5/span 4;
+  padding-bottom: 5rem;
 }
 .initiatives {
   max-height: fit-content;
@@ -832,7 +833,7 @@ div:has(input:focus) + .search-tab__results {
 .init {
   padding-top: 6rem;
 }
-.subsection-img:last-of-type {
+.third {
   clip-path: polygon(0% -7%, 100% -23%, 100% 100%, 0% 100%);
 }
 .subsection-3 {
@@ -986,6 +987,9 @@ div:has(input:focus) + .search-tab__results {
   color: white;
   z-index: 3;
 }
+.impact h2 {
+  padding: 6rem 0;
+}
 .bubble {
   width: clamp(2.5rem, 2.45vw, 127.7px);
   aspect-ratio: 1/1;
@@ -1090,7 +1094,6 @@ div:has(input:focus) + .search-tab__results {
   text-align: center;
   gap: .5rem;
   position: relative;
-  margin-bottom: 5rem;
 }
 .behind {
   z-index: 0;
@@ -1573,12 +1576,35 @@ and (max-width : 900px) {
   .news .row-flex.bump {
     flex-direction: column;
   }
+  .news {
+    border-bottom: 1px solid var(--grey);
+  }
+  .news .grow {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .news .donate__link p:after {
+    width: 0%;
+  }
+  .news .donate__link:hover p:after {
+    width: 100%;
+  }
+  .news__article {
+    width: 100%;
+  }
   .section-grid {
     display: flex;
     flex-direction: column;
   }
   .newsletter__box {
     padding: 3rem;
+  }
+  .footer__list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  footer {
+    text-align: center;
   }
 }
 @media only screen
@@ -1594,6 +1620,9 @@ and (min-width : 900px) {
 and (max-width : 700px) {
   .popup {
     max-width: 100vw;
+  }
+  .footer__list {
+    gap: 3rem;
   }
   .hover {
     max-width: 35vw;
@@ -1651,13 +1680,6 @@ and (max-width : 700px) {
   .cta {
     gap: 3rem;
   }
-  .footer__list {
-    flex-direction: column;
-    gap: 3rem;
-  }
-  footer {
-    text-align: center;
-  }
   .scroll {
     max-height: 600px;
   }
@@ -1675,4 +1697,7 @@ and (max-width : 700px) {
 }
 main .section {
   padding: 4.5rem 0;
+}
+main .section:has(.donate) {
+  padding: 0 0 4.5rem 0;
 }
