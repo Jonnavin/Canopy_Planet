@@ -18,6 +18,7 @@ html {
   font-size: 15px;
   background: var(--white);
   margin: 0;
+  overflow-x: hidden;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -174,7 +175,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 .button .icon-slider {
   height: 100%;
-  aspect-ratio: 1/1;
 }
 .button__link {
   padding: 21px;
@@ -1139,18 +1139,12 @@ a:hover + .behind-box {
 .icon-slider {
   aspect-ratio: 1/1;
   width: 1rem;
+  clip-path: fill-box;
   display: grid;
   align-items: center;
-  clip-path: fill-box;
 }
-/*.slider-container {
-  height: 100%;
-  gap: 50%;
-}*/
 .slider-container {
   height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 50%;
 }
 .icon-box {
@@ -1159,14 +1153,14 @@ a:hover + .behind-box {
   aspect-ratio: 1/1;
   height: 100%;
   position: relative;
-  left: 0;
+  left: -100%;
   transition: all ease-in-out .3s;
 }
 .icon-slider img {
   width: 100%;
 }
 a:hover .icon-box {
-  left: -200%;
+  left: 0;
 }
 .donate__bubble {
   border-radius: 50%;
